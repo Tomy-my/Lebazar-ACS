@@ -7,6 +7,7 @@
         <meta name="author" content="Tomy SOTTY" />
 		<link rel="stylesheet" href="./public/css/style.css" />
 		<link rel="stylesheet" href="./public/css/fonts.css" />
+		<link rel="stylesheet" href="./public/css/breakpoint.css" />
         <link rel="icon" href="./public/images/mainLogo.svg" />
         <script src="https://kit.fontawesome.com/508ebce8fc.js"></script>
 		<title>Lebazar : <?php echo $titre; ?></title>

@@ -49,6 +49,8 @@ nav {
   padding: 5px 5px 5px 5px;
 
   box-shadow: 0px 4px 9px 0px #0000002e;
+
+  transition: all 1s ease;
 }
 
 #homeLogo,
@@ -85,6 +87,10 @@ nav {
 
 #searching {
   margin-right: 100px;
+
+  opacity: 1;
+
+  transition-duration: 0.4ss;
 }
 
 #categorie,
@@ -110,7 +116,6 @@ nav {
 #categorie .fa-list-alt {
   font-size: 18px;
 }
-
 
 input[type="search"] {
   width: 206px;
@@ -142,3 +147,118 @@ input[type="search"]:focus {
 
   border-color: #f50;
 }
+
+/* -------------------------------------------------------------- */
+
+/* ------------------------------- Burger------------------------------- */
+
+.burger_menu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 70px;
+  height: 70px;
+
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#burger_slide1,
+#burger_slide2,
+#burger_slide3 {
+  width: 63px;
+  height: 8px;
+
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: auto;
+
+  background-color: #606060;
+
+  border: none;
+
+  transition: ease 1s;
+
+  transform: scale(0.7);
+}
+
+.burger_cl {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+
+  transition: all 1s ease;
+}
+
+#categorie_burger,
+#favoris_burger,
+#profil_burger {
+  font-size: 17px;
+
+  text-align: center;
+}
+
+#favoris_burger {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#profil_burger .fa-user,
+#favoris_burger .fa-heart,
+#categorie_burger .fa-list-alt {
+  font-size: 25px;
+}
+
+#searching_burger input[type="search"] {
+  display: none;
+
+  width: 206px;
+  height: 27px;
+
+  padding: 9px 10px 9px 32px;
+  border: solid 2px rgb(115, 115, 115);
+  border-radius: 10em;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+  color: #333;
+
+  background: #f9f9f9 url("../images/search.svg") no-repeat 9px center;
+  background-size: 15px;
+
+  box-sizing: content-box;
+  box-shadow: 0px 4px 9px 0px #0000002e;
+
+  transition: all 0.5s;
+}
+
+#searching_burger input[type="search"]:focus {
+  width: 250px;
+
+  color: rgb(95, 95, 95);
+
+  background-color: #fff;
+
+  border-color: #f50;
+}
+
+#exit_burger {
+  display: none;
+
+  height: 44px;
+
+  margin-top: 15px;
+
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+
+  font-size: 40px;
+  color: #c8a45d;
+
+  cursor: pointer;
+
+  transition: all 1s ease;
+}
+
+/* -------------------------------------------------------------- */

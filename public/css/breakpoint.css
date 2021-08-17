@@ -1,0 +1,33 @@
+/* -------------------------------Navigation------------------------------- */
+@media only screen and (max-width: 990px) {
+  #homeText,
+  #searching {
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  #homeText,
+  #searching {
+    margin-right: 15px;
+  }
+}
+
+/* -------------------------------Burger Menu------------------------------- */
+@media only screen and (max-width: 821px) {
+  #searching,
+  #categorie,
+  #favoris,
+  #profil {
+    display: none;
+  }
+
+  #homeText,
+  #searching {
+    margin-right: 30px;
+  }
+
+  .burger_menu {
+    display: flex;
+  }
+}
