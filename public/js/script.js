@@ -92,3 +92,81 @@ exitBurger.addEventListener("click", function() {
                                 window.onscroll = function() {};
                                 }, 1500);
 })
+
+
+
+function EffectMail(){
+
+    let IconMail = document.querySelector(".container_login i.fa-user");
+
+    IconMail.style.transform = "rotate(0deg)";
+    IconMail.style.transition = "0.4s";
+
+    setTimeout(function() {
+        IconMail.style.transform = "rotate(30deg)";
+
+        }, 100);
+    
+    setTimeout(function() {
+        IconMail.style.transform = "rotate(-20deg)";
+    
+        }, 200);
+
+    setTimeout(function() {
+        IconMail.style.transform = "rotate(20deg)";
+
+        }, 300);
+
+    setTimeout(function() {
+        IconMail.style.transform = "rotate(-20deg)";
+
+        }, 400);
+
+        setTimeout(function() {
+        IconMail.style.transform = "rotate(20deg)";
+
+        }, 500);
+        
+        setTimeout(function() {
+        IconMail.style.transform = "rotate(0deg)";
+        
+        }, 600);
+}
+
+function EffectPassword(){
+
+    let IconPassword = document.querySelector(".container_login i.fa-lock");
+
+    IconPassword.style.transform = "rotate(0deg)";
+    IconPassword.style.transition = "0.4s";
+
+    setTimeout(function() {
+        IconPassword.style.transform = "rotate(20deg)";
+
+        }, 100);
+    
+    setTimeout(function() {
+        IconPassword.style.transform = "rotate(-20deg)";
+    
+        }, 200);
+
+    setTimeout(function() {
+        IconPassword.style.transform = "rotate(20deg)";
+
+        }, 300);
+
+    setTimeout(function() {
+        IconPassword.style.transform = "rotate(-20deg)";
+
+        }, 400);
+
+        setTimeout(function() {
+        IconPassword.style.transform = "rotate(20deg)";
+
+        }, 500);
+        
+        setTimeout(function() {
+        IconPassword.style.transform = "rotate(0deg)";
+        
+        }, 600);
+}

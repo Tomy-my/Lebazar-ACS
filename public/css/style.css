@@ -43,6 +43,8 @@ nav {
   flex-direction: row;
   justify-content: center;
 
+  position: relative;
+
   width: 100%;
   height: 85px;
 
@@ -50,12 +52,15 @@ nav {
 
   box-shadow: 0px 4px 9px 0px #0000002e;
 
+  z-index: 9999;
+
   transition: all 1s ease;
 }
 
 #homeLogo,
 #homeText,
 #searching,
+#ajouter,
 #categorie,
 #profil,
 #favoris {
@@ -75,7 +80,7 @@ nav {
 }
 
 #homeText {
-  margin-right: 100px;
+  margin-right: 75px;
   margin-left: 3px;
   font-size: 33px;
 }
@@ -83,6 +88,25 @@ nav {
 #B {
   font-family: "Baumans", cursive;
   color: #f50;
+}
+
+#ajouter {
+  background-color: #f50;
+  color: white;
+  width: 190px;
+  height: 45px;
+
+  margin-right: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0px 4px 9px 0px #0000002e;
+  border: solid 2px rgba(0, 0, 0, 0.1);
+}
+
+#ajouter a {
+  color: white;
 }
 
 #searching {
@@ -111,6 +135,7 @@ nav {
   color: #f50;
 }
 
+#ajouter .fa-plus-square,
 #profil .fa-user,
 #favoris .fa-heart,
 #categorie .fa-list-alt {
@@ -191,6 +216,7 @@ input[type="search"]:focus {
   transition: all 1s ease;
 }
 
+#ajouter_burger,
 #categorie_burger,
 #favoris_burger,
 #profil_burger {
@@ -204,6 +230,7 @@ input[type="search"]:focus {
   margin-bottom: 40px;
 }
 
+#ajouter_burger .fa-plus-square,
 #profil_burger .fa-user,
 #favoris_burger .fa-heart,
 #categorie_burger .fa-list-alt {
@@ -262,3 +289,250 @@ input[type="search"]:focus {
 }
 
 /* -------------------------------------------------------------- */
+
+.welcome{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.welcome h2{
+  margin-top: 15px;
+}
+
+#orange{
+  color: #f50;
+}
+
+#underline{
+  color: #f50;
+}
+
+.banner{
+  width: 1200px;
+
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titre_newAnnonce{
+  width: 1160px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 18px;
+}
+
+.container_newAnnonce{
+  width: 1160px;
+  height: 180px;
+
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: rgb(249, 249, 249);
+
+  border: solid 2px rgb(115, 115, 115);
+
+  box-shadow: 0px 4px 9px 0px #0000002e;
+}
+
+
+
+
+
+/* -------------------------------Index/Login-------------------------------*/
+.page_login{
+  width: 100%;
+  height: 85vh;
+
+  background-image: url('../images/banner.svg');
+  background-repeat: no-repeat;
+  background-size: 1200px;
+  background-position: bottom;
+}
+
+.container_login {
+  width: 500px;
+  height: 537px;
+
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 30px 10px 30px;
+
+  background-color: #fdfdfd00;
+
+  border-radius: 20px;
+  /* border: solid 2px rgba(59, 65, 72, 0.51); */
+  box-shadow: 0px 4px 9px 0px #00000052;
+
+  text-align: center;
+
+  animation: 1.8s ease LoginForm;
+}
+
+.container_login h2{
+  margin-bottom: 10px;
+
+  font-size: 27px;
+  letter-spacing: 1px;
+}
+
+.container_login p{
+  margin-bottom: 30px;
+}
+
+.container_mail {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  position: relative;
+
+  width: 304px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+
+  border: solid 1px #1e1e1e;
+  box-shadow: 0px 4px 9px 0px #00000078;
+
+  transform: scale(1);
+}
+
+.ico_mail, .ico_password{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 54px;
+  height: 54px;
+
+  border-right: solid 1px rgb(44, 44, 44);
+  background-color: #363b41;
+
+  text-align: center;
+  color: #bdbdbd;
+}
+
+.container_password {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  width: 305px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+
+  border: solid 1px #1e1e1e;
+  box-shadow: 0px 4px 9px 0px #00000078;
+}
+
+#inputPassword, 
+#inputEmail {
+  width: 250px;
+  height: 54px;
+
+  padding-left: 15px;
+
+  border: none;
+  background-color: #3b4148;
+
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+
+  color: #bdbdbd;
+  
+  letter-spacing: 1px;
+
+  transition-duration: 0.2s;
+}
+
+#inputPassword:focus, 
+#inputEmail:focus {
+  color: rgb(224, 224, 224);
+}
+
+#inputPassword:hover, 
+#inputEmail:hover {
+  background-color: #363b41;
+}
+
+button.btn-lg {
+  width: 306px;
+  height: 54px;
+
+  margin-top: 15px;
+
+  border-radius: 5px;
+  border: solid 1px #1e1e1e;
+
+  background-color: #363b41;
+
+  box-shadow: 0px 4px 9px 0px #00000078;
+
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+
+  color: rgb(213, 213, 213);
+
+  cursor: pointer;
+
+  transition-duration: 0.3s;
+
+}
+
+button.btn-lg:hover {
+  background-color: #3b4148;
+}
+
+.mb-3,
+.alert-danger {
+  width: 250px;
+
+  margin-top: 20px;
+
+  line-height: 24px;
+  color: rgb(213, 213, 213);
+}
+
+i.fa-exclamation-triangle {
+  color: 	#ffcc00;
+}
+
+.mb-3 a,
+.mb-3 a:visited,
+.mb-3 a:link{
+  text-decoration: underline;
+}
+
+#redirec_register{
+  margin-top: 30px;
+}
+
+#redirec_register a{
+  font-weight: 500;
+  color: #f30;
+}
+
+#redirec_register a:hover{
+  color: rgb(255, 51, 0);
+  text-decoration: underline;
+}
+
+
+@keyframes LoginForm {
+  0%{
+    top: -500px;
+  }
+  100%{
+    top: 45%;
+  }
+}
