@@ -499,7 +499,7 @@ button.btn-lg:hover {
 }
 
 i.fa-exclamation-triangle {
-  color: #ffcc00;
+  color: #ffa700;
 }
 
 .mb-3 a,
@@ -522,15 +522,203 @@ i.fa-exclamation-triangle {
   text-decoration: underline;
 }
 
-@keyframes LoginForm {
-  0% {
-    top: -500px;
-  }
-  100% {
-    top: 45%;
-  }
-}
-
 /* -------------------------------------------------------------- */
 
 /* ------------------------------- Register ------------------------------- */
+.page_register {
+  width: 100%;
+  height: 100vh;
+
+  background-image: url("../images/bannerLogin.svg");
+  background-repeat: no-repeat;
+  background-size: 1200px;
+  background-position: bottom;
+}
+
+.container_register {
+  width: 500px;
+  height: 905px;
+
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 45px 10px 45px;
+
+  background-color: #e3e3e3;
+
+  border-radius: 20px;
+  /* border: solid 2px rgba(59, 65, 72, 0.51); */
+  box-shadow: 0px 4px 9px 0px #00000052;
+
+  text-align: center;
+
+  animation: 1.8s ease LoginForm;
+}
+
+.container_register h2 {
+  margin-bottom: 10px;
+
+  font-size: 27px;
+  letter-spacing: 1px;
+}
+
+#accroche {
+  margin-bottom: 50px;
+}
+
+ .container_prenom,
+ .container_nom,
+ .container_pseudo,
+ .container_date,
+ .container_mail,
+ .container_password,
+ .container_passwordCheck {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  position: relative;
+
+  width: 304px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+
+  border: solid 1px #737373;
+}
+
+.container_date,
+.container_pseudo{
+  margin-bottom: 45px;
+}
+
+
+ .ico_ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 54px;
+  height: 54px;
+
+  border-right: solid 1px rgb(44, 44, 44, 0.48);
+  background-color: #e3e3e3;
+
+  text-align: center;
+  color: #646464;
+}
+
+ #inputPrenom,
+ #inputNom,
+ #inputPseudo,
+ #inputDate,
+.page_register #inputEmail,
+.page_register #inputPassword,
+.page_register #inputPasswordCheck {
+  width: 250px;
+  height: 54px;
+
+  padding-left: 15px;
+
+  border: none;
+  background-color: #ffffff5c;
+
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+
+  color: #000;
+
+  letter-spacing: 1px;
+
+  transition-duration: 0.2s;
+}
+
+ #inputPrenom:focus,
+ #inputNom:focus,
+ #inputPseudo:focus,
+ #inputDate:focus,
+.page_register #inputEmail:focus,
+.page_register #inputPassword:focus,
+.page_register #inputPasswordCheck:focus {
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+ #inputPrenom:hover,
+ #inputNom:hover,
+ #inputPseudo:hover,
+ #inputDate:hover,
+.page_register #inputEmail:hover,
+.page_register #inputPassword:hover,
+.page_register #inputPasswordCheck:hover {
+  background-color: #f9f9f9;
+}
+
+.contraintes_mdp{
+  width: 304px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: initial;
+  line-height: 25px;
+}
+
+.slider_mdp{
+  width: 250px;
+  height: 6px;
+
+  margin-top: 5px;
+  margin-bottom: 15px;
+
+  background-color: #acacac;
+
+  border-radius: 15px;
+}
+
+.int_slider{
+  width: 15%;
+  height: 6px;
+
+  background-color: #f74c4c;
+
+  border-radius: 15px;
+
+  transition-duration: 0.4s;
+}
+
+.page_register button.btn-lg {
+  width: 306px;
+  height: 54px;
+
+  margin-top: 15px;
+
+  border-radius: 5px;
+  border: solid 1px #737373;
+
+  background-color: #4a90e2;
+
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+
+  color: rgb(255, 255, 255);
+
+  cursor: pointer;
+
+  transition-duration: 0.3s;
+}
+
+.page_register button.btn-lg:hover {
+  background-color: #307dd7;
+}
+
+.valid {
+  color: green;
+}
+
+
+.invalid {
+  color: red;
+}
