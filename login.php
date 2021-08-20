@@ -15,7 +15,7 @@ include_once "controller/login.php"
             <div class="container_mail">
                 <div class="ico_mail"><i class="fas fa-user"></i></div>
                 <div class="input_mail"> 
-                    <input onclick="EffectMail()" type="email" name="email" id="inputEmail" placeholder="E-mail de connexion" class="form-control" autocomplete="email" required>
+                    <input onclick="EffectMail()" type="email" name="email" id="inputEmail" placeholder="E-mail de connexion" class="form-control" autocomplete="email" required pattern="^[A-Za-z]+@{1}[A-Za-z]+\.{1}[A-Za-z]{2,}$" maxlength="20">
                 </div>
             </div>
             <div class="container_password">

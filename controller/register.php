@@ -6,21 +6,38 @@ if(isset($_REQUEST['btn_insert_register']))
 {
 	try
 	{
-		$prenom			= $_REQUEST['prenom'];	
-		$nom			= $_REQUEST['nom'];	
-		$naissance		= $_REQUEST['naissance'];	
-		$pseudo			= $_REQUEST['pseudo'];	
-		$email		    = $_REQUEST['email'];	
-		$password		= sha1($_REQUEST['password']);	
-
-		
+		$prenom			= htmlspecialchars($_REQUEST['prenom']);	
+		$nom			= htmlspecialchars($_REQUEST['nom']);	
+		$naissance		= htmlspecialchars($_REQUEST['naissance']);	
+		$pseudo			= htmlspecialchars($_REQUEST['pseudo']);	
+		$email		    = htmlspecialchars($_REQUEST['email']);	
+		$password		= htmlspecialchars(sha1($_REQUEST['password']));	
+		$confirm		= htmlspecialchars($_REQUEST['confirm']);	
+    
 		if(empty($prenom)){
-			$errorMsg="Please Enter titre";
+			$errorMsg="Prénom manquant";
 		}
 
 		else if(empty($nom)){
-			$errorMsg="Please Select Image";
+			$errorMsg="Nom manquant";
+		}
+        else if(empty($naissance)){
+			$errorMsg="Date de naissance manquante";
+		}
+        else if(empty($pseudo)){
+			$errorMsg="Pseudo manquant";
 		}	
+        else if(empty($email)){
+			$errorMsg="Adresse E-mail manquante";
+		}	
+        else if(empty($password)){
+			$errorMsg="Mot de passe manquant";
+		}	
+        else if( $_POST['confirm'] != $_POST['password'] )
+        {
+            $errorMsg="Les mots de passe ne sont pas identiques";
+             
+        }			
 		
 		if(!isset($errorMsg))
 		{
