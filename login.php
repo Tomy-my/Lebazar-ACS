@@ -33,7 +33,7 @@ include('view/header.php');
         </form>
         <p id="redirec_register">Envie de vous inscrire ? <strong><a href="inscription">Créer un compte</a></strong></p>
     </div>
-
+ 
     <!-- <div class="banner">
         <img src="public/images/banner.svg" alt="bannière">
     </div> -->

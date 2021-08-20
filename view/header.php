@@ -13,3 +13,4 @@
 		<title>Lebazar : <?php echo $titre; ?></title>
 	</head>
     <body>
+		
