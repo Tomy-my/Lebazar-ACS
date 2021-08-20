@@ -1,1 +1,114 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400"><defs><style>.cls-1{fill:#fff;opacity:0;}.cls-2{fill:#f50;}</style></defs><title>rondDeco</title><g id="BACKGROUND"><rect class="cls-1" width="800" height="400"/></g><g id="OBJECTS"><path class="cls-2" d="M559.87,294.65c1.71-4,1.81-8.65,1.3-13a26.35,26.35,0,0,0-3.45-11.07c-12.23-19.41-43.72-2-39.9,19.17C521.42,309.57,552.05,313.25,559.87,294.65Z" transform="translate(0)"/><ellipse class="cls-2" cx="40.36" cy="266.89" rx="10.46" ry="10.97"/><path class="cls-2" d="M787.51,244.5c3.14-5,1.59-12.55-3.27-15.65-7.48-4.8-19.85,3.12-16.86,12.6C770.16,250.25,782.63,252.22,787.51,244.5Z" transform="translate(0)"/><path class="cls-2" d="M792.21,271.42A9.06,9.06,0,0,1,793,275c.1,2.88-3.52,4.7-6,4.09-2.87-.7-4.43-4.68-3-7.37a5.17,5.17,0,0,1,4.72-2.56A3.8,3.8,0,0,1,792.21,271.42Z" transform="translate(0)"/><path class="cls-2" d="M798.44,47.46c1.7-4.05,1.8-8.65,1.29-13a26.35,26.35,0,0,0-3.45-11.07c-12.23-19.41-43.72-2-39.89,19.17C760,62.38,790.61,66.06,798.44,47.46Z" transform="translate(0)"/><path class="cls-2" d="M728.82,400a14.82,14.82,0,0,0,11.83-7.45,19.54,19.54,0,0,0,1.88-11.74c-.71-5.73-3.39-11.35-7.92-14.63a20.33,20.33,0,0,0-10.37-3.56c-4.85-.4-10.2.7-13.4,4.56-3.73,4.49-3.45,11.22-2.35,17.06A19.14,19.14,0,0,0,728.82,400Z" transform="translate(0)"/><path class="cls-2" d="M762.82,272.69a10.68,10.68,0,0,0-15.27-.56c-6.28,6.42-2,20.95,7.45,20.26C763.83,291.75,768.73,279.56,762.82,272.69Z" transform="translate(0)"/><path class="cls-2" d="M760.5,310a7.71,7.71,0,0,1,3.53.1c2.68.61,3.47,4.74,2.29,7.12a4.85,4.85,0,0,1-7.54,1.19,5.68,5.68,0,0,1-1.2-5.43A3.88,3.88,0,0,1,760.5,310Z" transform="translate(0)"/><path class="cls-2" d="M13.09,310a7.71,7.71,0,0,1,3.53.1c2.69.61,3.47,4.74,2.29,7.12a4.85,4.85,0,0,1-7.54,1.19,5.7,5.7,0,0,1-1.2-5.43A3.88,3.88,0,0,1,13.09,310Z" transform="translate(0)"/><path class="cls-2" d="M98,76.49c3.94-9.51,4.17-20.33,3-30.66-1-9.14-3.22-18.35-8-26C64.74-25.84-8.11,15.13.74,64.87,9.05,111.58,79.92,120.22,98,76.49Z" transform="translate(0)"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: #fff;
+                opacity: 0;
+            }
+
+            .cls-2 {
+                fill: #f50;
+            }
+
+            @keyframes SVG1 {
+                0% {
+                    transform: translate(0px, 0px) rotate(0deg);
+                }
+
+                50% {
+                    transform: scale(1.06) rotate(-15deg);
+                }
+
+                100% {
+                    transform: translate(0px, 0px) rotate(0deg);
+                }
+            }
+
+            @keyframes SVG2 {
+                0% {
+                    transform: translate(0px, 0px) rotate(0deg);
+                }
+
+                50% {
+                    transform: translate(-20px, 10px) rotate(2deg);
+                }
+
+                100% {
+                    transform: translate(0px, 0px) rotate(0deg);
+                }
+            }
+
+            @keyframes SVG3 {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                50% {
+                    transform: translate(-3px, -30px) rotate(2deg);
+                }
+
+                100% {
+                    transform: rotate(0deg);
+                }
+            }
+
+            @keyframes SVG4 {
+                0% {
+                    transform: translate(0px, 0px) rotate(0deg);
+                }
+
+                50% {
+                    transform: translate(-3px, -30px) rotate(-15deg);
+                }
+
+                100% {
+                    transform: translate(0px, 0px) rotate(0deg);
+                }
+            }
+        </style>
+    </defs>
+    <title>rondDeco</title>
+    <g id="BACKGROUND">
+        <rect class="cls-1" width="800" height="400" />
+    </g>
+    <g id="OBJECTS">
+        <path class="cls-2"
+            d="M559.87,294.65c1.71-4,1.81-8.65,1.3-13a26.35,26.35,0,0,0-3.45-11.07c-12.23-19.41-43.72-2-39.9,19.17C521.42,309.57,552.05,313.25,559.87,294.65Z"
+            transform="translate(0)"
+            style="Animation-name: SVG3;Animation-duration: 30s;Animation-iteration-count: infinite;" />
+        <ellipse class="cls-2" cx="40.36" cy="266.89" rx="10.46" ry="10.97"
+            style="Animation-name: SVG3;Animation-duration: 50s;Animation-iteration-count: infinite;" />
+        <path class="cls-2"
+            d="M766.82,241.41c3.15-5,1.59-12.55-3.26-15.66-7.48-4.79-19.85,3.12-16.86,12.6C749.48,247.16,762,249.12,766.82,241.41Z"
+            transform="translate(0)"
+            style="Animation-name: SVG;Animation-duration: 30s;Animation-iteration-count: infinite;" />
+        <path class="cls-2"
+            d="M777.25,266.39A9.06,9.06,0,0,1,778,270c.1,2.88-3.52,4.7-6,4.09-2.87-.7-4.42-4.68-3-7.37a5.17,5.17,0,0,1,4.72-2.56A3.8,3.8,0,0,1,777.25,266.39Z"
+            transform="translate(0)"
+            style="Animation-name: SVG3;Animation-duration: 30s;Animation-iteration-count: infinite;" />
+        <path class="cls-2"
+            d="M755.79,53.65c1.7-4,1.8-8.65,1.29-13a26.35,26.35,0,0,0-3.45-11.07c-12.23-19.41-43.72-2-39.89,19.17C717.33,68.57,748,72.25,755.79,53.65Z"
+            transform="translate(0)"
+            style="Animation-name: SVG2;Animation-duration: 40s;Animation-iteration-count: infinite;" />
+        <path class="cls-2"
+            d="M682.17,377.79a11.86,11.86,0,0,0,9.49-5.94,15.52,15.52,0,0,0,1.49-9.37c-.57-4.58-2.73-9.06-6.36-11.69a16.48,16.48,0,0,0-8.33-2.85c-3.89-.32-8.18.55-10.74,3.63-3,3.58-2.76,8.95-1.87,13.61A15.38,15.38,0,0,0,682.17,377.79Z"
+            transform="translate(0)"
+            style="Animation-name: SVG3;Animation-duration: 20s;Animation-iteration-count: infinite;" />
+        <path class="cls-2"
+            d="M749.19,272.69a10.66,10.66,0,0,0-15.26-.56c-6.28,6.42-2,20.95,7.45,20.26C750.2,291.75,755.11,279.56,749.19,272.69Z"
+            transform="translate(0)"
+            style="Animation-name: SVG;Animation-duration: 30s;Animation-iteration-count: infinite;" />
+        <path class="cls-2"
+            d="M760.5,310a7.71,7.71,0,0,1,3.53.1c2.68.61,3.47,4.74,2.29,7.12a4.85,4.85,0,0,1-7.54,1.19,5.68,5.68,0,0,1-1.2-5.43A3.88,3.88,0,0,1,760.5,310Z"
+            transform="translate(0)"
+            style="Animation-name: SVG;Animation-duration: 30s;Animation-iteration-count: infinite;" />
+        <path class="cls-2"
+            d="M13.09,310a7.71,7.71,0,0,1,3.53.1c2.69.61,3.47,4.74,2.29,7.12a4.85,4.85,0,0,1-7.54,1.19,5.7,5.7,0,0,1-1.2-5.43A3.88,3.88,0,0,1,13.09,310Z"
+            transform="translate(0)"
+            style="Animation-name: SVG4;Animation-duration: 60s;Animation-iteration-count: infinite;" />
+        <path class="cls-2"
+            d="M153.74,108.69c3.94-9.52,4.18-20.34,3-30.66-1-9.15-3.22-18.35-8-26C120.47,6.35,47.62,47.33,56.46,97.07,64.77,143.77,135.65,152.42,153.74,108.69Z"
+            transform="translate(0)"
+            style="Animation-name: SVG1;Animation-duration: 30s;Animation-iteration-count: infinite;" />
+    </g>
+</svg>

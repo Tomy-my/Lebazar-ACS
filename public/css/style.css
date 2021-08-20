@@ -358,10 +358,10 @@ input[type="search"]:focus {
   height: 85vh;
 
   /* background: no-repeat center bottom / 1200px url("../images/bannerLogin.svg") */
-  background-image: url("../images/bannerLogin.svg"), url("../images/rondDeco.svg");   
+  background-image: url("../images/rondDeco.svg"), url("../images/bannerLogin.svg");   
   background-repeat: no-repeat;
-  background-size: 1200px, 1400px;
-  background-position: bottom, top;
+  background-size: 1400px, 1200px;
+  background-position: top, bottom;
 }
 
 .container_login {
@@ -756,3 +756,4 @@ i.fa-exclamation-triangle {
 
   font-size: 13px;
 }
+
