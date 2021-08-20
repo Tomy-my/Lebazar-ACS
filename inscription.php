@@ -58,7 +58,7 @@ include('view/header.php');
                     <input onclick="EffectPassword()" type="password" name="password" id="inputPasswordCheck" placeholder="Comfirme le mot de passe" class="form-control" autocomplete="current-password" required>
                 </div>
             </div>
-            <span id="message">Attention &nbsp;<i class="fas fa-exclamation-triangle"></i><br>Le mot de passe ne correspond pas</span><br />
+            <span id="message">Attention &nbsp;<i class="fas fa-exclamation-triangle"></i><br>Les 2 mots de passe ne correspondent pas</span><br />
             <!-- <p>Attention &nbsp;<i class="fas fa-exclamation-triangle"></i>  -->
 
             <button class="btn btn-lg btn-primary" type="submit">

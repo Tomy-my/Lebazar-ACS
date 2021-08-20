@@ -41,16 +41,16 @@ password.addEventListener('keyup', function(){   // Merci Nina !!
 
     let bgColor = 'red';
     if(matches.length == 1) {
-        bgColor = 'orange';
+        bgColor = 'red';
     }
     else if(matches.length == 2) {
-        bgColor = 'blue';
+        bgColor = 'orange';
     }
     else if(matches.length == 3) {
         bgColor = 'green';
     }
     else if(matches.length == 4) {
-        bgColor = 'brown';
+        bgColor = '#1bd74a';
     }
     slider.style.backgroundColor = bgColor;
 
