@@ -1,5 +1,5 @@
 <?php 
-$titre = "Connexion";
+$titre = "Inscription";
 
 include('view/header.php');
 
