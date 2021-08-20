@@ -61,13 +61,11 @@ checkPassword.addEventListener('keyup', function() {
     
 
     if (password.value === checkPassword.value) {
-        msg.style.color="green";
-        msg.innerHTML="Le mot de passe correspond";
+        msg.style.display="none";
     }
 
     else{
-        msg.style.color="red";
-        msg.innerHTML="Le mot de passe ne correspond pas";
+        msg.style.display="block";
     }
 
 

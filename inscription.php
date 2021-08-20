@@ -47,7 +47,7 @@ include('view/header.php');
                 </div>
             </div>
             <div class="contraintes_mdp">
-                <br>Fiabilité du mot de passe :</p>
+                <p>Fiabilité du mot de passe :</p>
                 <div class="slider_mdp">
                     <div class="int_slider"></div>
                 </div>
@@ -58,12 +58,13 @@ include('view/header.php');
                     <input onclick="EffectPassword()" type="password" name="password" id="inputPasswordCheck" placeholder="Comfirme le mot de passe" class="form-control" autocomplete="current-password" required>
                 </div>
             </div>
-            <span id="message"></span><br />
+            <span id="message">Attention &nbsp;<i class="fas fa-exclamation-triangle"></i><br>Le mot de passe ne correspond pas</span><br />
             <!-- <p>Attention &nbsp;<i class="fas fa-exclamation-triangle"></i>  -->
 
             <button class="btn btn-lg btn-primary" type="submit">
-                Connexion
+                Créer votre compte
             </button>
+            <p id="condition">En vous inscrivant vous acceptez les conditions d'utilisation du site Le<span id="B">b</span>azar.</p>
         </form>
     </div>
 </div>

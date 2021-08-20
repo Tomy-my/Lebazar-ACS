@@ -536,16 +536,17 @@ i.fa-exclamation-triangle {
 }
 
 .container_register {
-  width: 500px;
+  width: 525px;
   height: 905px;
 
   margin-top: 50px;
+  margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
 
-  padding: 45px 10px 45px;
+  padding: 25px 10px 25px;
 
-  background-color: #e3e3e3;
+  background-color: #e3e3e3f7;
 
   border-radius: 20px;
   /* border: solid 2px rgba(59, 65, 72, 0.51); */
@@ -564,7 +565,7 @@ i.fa-exclamation-triangle {
 }
 
 #accroche {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
  .container_prenom,
@@ -594,6 +595,13 @@ i.fa-exclamation-triangle {
   margin-bottom: 45px;
 }
 
+.container_password {
+  margin-bottom: 5px;
+}
+
+.container_passwordCheck{
+  margin-top: 20px;
+}
 
  .ico_ {
   display: flex;
@@ -657,13 +665,19 @@ i.fa-exclamation-triangle {
 }
 
 .contraintes_mdp{
-  width: 304px;
+  width: 314px;
 
   margin-left: auto;
   margin-right: auto;
 
+  padding-left: 10px;
+
   text-align: initial;
   line-height: 25px;
+}
+
+.contraintes_mdp p {
+  font-size: 15px;
 }
 
 .slider_mdp{
@@ -689,11 +703,23 @@ i.fa-exclamation-triangle {
   transition-duration: 0.4s;
 }
 
+#message {
+  display: none;
+
+  width: 304px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: initial;
+  font-size: 15px;
+}
+
 .page_register button.btn-lg {
   width: 306px;
   height: 54px;
 
-  margin-top: 15px;
+  margin-top: 10px;
 
   border-radius: 5px;
   border: solid 1px #737373;
@@ -714,11 +740,8 @@ i.fa-exclamation-triangle {
   background-color: #307dd7;
 }
 
-.valid {
-  color: green;
-}
+#condition {
+  margin-top: 10px;
 
-
-.invalid {
-  color: red;
+  font-size: 13px;
 }
