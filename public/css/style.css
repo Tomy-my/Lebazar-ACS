@@ -714,7 +714,7 @@ i.fa-exclamation-triangle {
   transition-duration: 0.5s;
 }
 
-#message {
+.message {
   display: none;
 
   width: 304px;
@@ -724,6 +724,19 @@ i.fa-exclamation-triangle {
 
   text-align: initial;
   font-size: 15px;
+}
+
+.message2 {
+  width: 304px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: initial;
+  font-size: 15px;
+  line-height: 25px;
+
+  color: red;
 }
 
 .page_register button.btn-lg {

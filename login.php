@@ -4,6 +4,8 @@ $titre = "Connexion";
 include('view/header.php');
 
     include('view/navigation.php');
+
+include_once "controller/login.php"
 ?>
 <div class="page_login">
     <div class="container_login">
@@ -22,21 +24,17 @@ include('view/header.php');
                     <input onclick="EffectPassword()" type="password" name="password" id="inputPassword" placeholder="Mot de passe" class="form-control" autocomplete="current-password" required>
                 </div>
             </div>
-
-            <button class="btn btn-lg btn-primary" type="submit">
+            <div class="message2">
+                <?php if(isset($erreur)){echo $erreur;}?>
+            </div>
+            <button class="btn btn-lg btn-primary" type="submit" name="submit">
                 Connexion
             </button>
 
-                <!-- <div class="mb-3">
-                    Attention &nbsp;<i class="fas fa-exclamation-triangle"></i> <br>vous êtes connecté en tant que : <br> {{ app.user.username }}  <a href="{{ path('app_logout') }}">Déconnexion</a> ou direction la page <a href="{{ path('produit_index') }}">Produit</a>
-                </div> -->
         </form>
         <p id="redirec_register">Envie de vous inscrire ? <strong><a href="inscription">Créer un compte</a></strong></p>
     </div>
  
-    <!-- <div class="banner">
-        <img src="public/images/banner.svg" alt="bannière">
-    </div> -->
 </div>
 <?php    
 include('view/footer.php');    

@@ -4,12 +4,13 @@ $titre = "Inscription";
 include('view/header.php');
 
     include('view/navigation.php');
+include("controller/register.php");
 ?>
 <div class="page_register">
     <div class="container_register">
         <h2>Créer un nouveau compte</h2>
         <p id="accroche">Inscrivez vous afin d'avoir accès à toutes nos fonctionnalités.</p>
-        <form method="post">
+        <form action="" method="post">
             <div class="container_prenom">
                 <div class="ico_"><i class="fas fa-user"></i></div>
                 <div class="input_mail"> 
@@ -25,7 +26,7 @@ include('view/header.php');
             <div class="container_date">
                 <div class="ico_"><i class="far fa-calendar-alt"></i></div>
                 <div class="input_mail"> 
-                    <input onclick="EffectMail()" type="date" name="email" id="inputDate" class="form-control"required>
+                    <input onclick="EffectMail()" type="date" name="naissance" id="inputDate" class="form-control"required>
                 </div>
             </div>
             <div class="container_pseudo">
@@ -55,13 +56,13 @@ include('view/header.php');
             <div class="container_passwordCheck">
                 <div class="ico_"><i class="fas fa-lock"></i></div>
                 <div class="input_password"> 
-                    <input onclick="EffectPassword()" type="password" name="password" id="inputPasswordCheck" placeholder="Comfirme le mot de passe" class="form-control" autocomplete="current-password" required>
+                    <input onclick="EffectPassword()" type="password" id="inputPasswordCheck" placeholder="Comfirme le mot de passe" class="form-control" autocomplete="current-password" required>
                 </div>
             </div>
-            <span id="message">Attention &nbsp;<i class="fas fa-exclamation-triangle"></i><br>Les 2 mots de passe ne correspondent pas</span><br />
+            <span class="message">Attention &nbsp;<i class="fas fa-exclamation-triangle"></i><br>Les 2 mots de passe ne correspondent pas</span><br />
             <!-- <p>Attention &nbsp;<i class="fas fa-exclamation-triangle"></i>  -->
 
-            <button class="btn btn-lg btn-primary" type="submit">
+            <button class="btn btn-lg btn-primary" type="submit" name="btn_insert_register">
                 Créer votre compte
             </button>
             <p id="condition">En vous inscrivant vous acceptez les conditions d'utilisation du site Le<span id="B">b</span>azar.</p>
