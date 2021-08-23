@@ -11,12 +11,6 @@
         </a>
     </div>
 
-    <!-- <div id="ajouter" >
-        <a href="./index.php">
-            <i class="far fa-plus-square"></i>&nbsp; Ajouter une annonce
-        </a>
-    </div> -->
-
     <form id="searching">
 	    <input type="search" placeholder="&nbsp;Rechercher une annonce">
     </form>
@@ -38,7 +32,7 @@
     </div>
 
     <div id="profil" >
-        <a href="./login.php">
+        <a href="./account.php">
             <i class="far fa-user"></i>
             <br>
             Mon compte
@@ -58,14 +52,6 @@
         <form id="searching_burger">
             <input type="search" placeholder="&nbsp;Rechercher une annonce">
         </form>
-
-        <!-- <div id="ajouter_burger" >
-            <a href="./index.php">
-                <i class="far fa-plus-square"></i>
-                <br>
-                Ajouter
-            </a>
-        </div> -->
 
         <div id="categorie_burger" >
             <a href="./index.php">
