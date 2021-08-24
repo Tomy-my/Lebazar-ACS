@@ -51,7 +51,7 @@ if(isset($_REQUEST['btn_insert_register']))
 		
 			if($insert_stmt->execute())
 			{
-				header("refresh:1;index.php"); 
+				header("refresh:1;login.php"); 
 			}
 		}
 	}
