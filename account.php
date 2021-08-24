@@ -32,7 +32,7 @@ else
             </div>
 
             <div id="sn_deco" >
-                <a href="./account.php">
+                <a href="controller/logout.php">
                     <i class="fas fa-sign-out-alt"></i>&nbsp;
                     Déconnexion
                 </a>
@@ -47,8 +47,32 @@ else
                         <i class="fas fa-pencil-alt"></i>
                     </div>
                 </div>
-                <h4 id="pseudo_acc">Tomymy</h4>
-                <button class="btn btn-edit_profil " type="submit" name="Modiffier le profil">Modiffier le profil</button></li>
+                <div class="inputPseudo">
+                    <label for="pseudo_acc">Pseudo</label>
+                    <input type="text" id="pseudo_acc" placeholder="Tomymy">
+                </div>
+                <div class="inputName">
+                    <div class="inputPrenom_">
+                        <label for="prenom_acc">Prénom</label>
+                        <input type="text" id="prenom_acc" placeholder="Tomy">
+                    </div>
+                    <div class="inputNom_">
+                        <label for="nom_acc">Nom</label>
+                        <input type="text" id="nom_acc" placeholder="Sotty">
+                    </div>
+                </div>
+                <div class="inputDate">
+                    <i class="far fa-calendar-alt"></i>
+                    <input type="text" id="date_acc"placeholder="26/02/2000">
+                </div>
+                <div class="inputMail">
+                    <i class="far fa-envelope"></i>
+                    <input type="text" id="mail_acc" placeholder="azerouto@gmail.com">
+                </div>
+                <div class="double_btn">
+                    <button id="save_acc">Sauvegarder</button>
+                    <button id="cancel_acc">Annuler</button>
+                </div>
             </div>
 
             <div class="my_annonce">

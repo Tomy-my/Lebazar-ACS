@@ -900,9 +900,10 @@ i.fa-exclamation-triangle {
   display: flex;
   flex-direction: column;
 
-  width: 17%;
+  width: 265px;
 
   margin-left: auto;
+  margin-right: 20px;
 
   background-color: #e3e3e3;
 }
@@ -949,39 +950,137 @@ i.fa-exclamation-triangle {
   background-color: white;
 }
 
-#pseudo_acc {
-  margin-top: 30px;
-  margin-bottom: 15px;
+.settings input{
+  width: 100%;
+  height: 37px;
 
-  font-size: 23px;
-  font-weight: normal;
+  margin-top: 5px;
 
-  text-align: center;
+  padding-left: 10px;
+
+  background-color: #fff0;
+
+  border: solid 1px #999;
+  border-radius: 5px;
+
+  font-size: 14px;
+
+  transition-duration: 0.2s;
 }
 
-.btn-edit_profil {
-  width: 300px;
-  height: 40px;
+.settings input:hover{
+  background-color: #c6c6c6;
+}
 
-  margin-top: 10px;
+.settings input:focus{
+  background-color: #c6c6c6;
+}
 
-  border-radius: 5px;
-  border: solid 1px #737373;
+.inputPseudo {
+  margin-top: 5px;
+}
+
+.inputName,
+.inputMail, 
+.inputDate {
+  margin-top: 15px;
+}
+
+.inputName {
+  display: flex;
+}
+
+#prenom_acc {
+  width: 95%;
+}
+
+.inputNom_ label {
+  margin-left: 5px;
+}
+
+#nom_acc {
+  width: 97%;
+  margin-left: 5px;
+}
+
+.inputDate {
+  display: flex;
+}
+
+.inputDate i {
+  margin-top: auto;
+  margin-bottom: auto;
+
+  font-size: 19px;
+}
+
+#date_acc {
+  width: 90%;
+
+  margin-left: 10px;
+}
+
+.inputMail {
+  display: flex;
+}
+
+.inputMail i {
+  margin-top: auto;
+  margin-bottom: auto;
+
+  font-size: 19px;
+}
+
+#mail_acc {
+  width: 90%;
+
+  margin-left: 10px;
+}
+
+.double_btn {
+  margin-top: 20px;
+}
+
+#save_acc{
+  width: 110px;
+  height: 38px;
 
   background-color: #4a90e2;
 
-  font-size: 17px;
+  border: solid 1px #005ac4;
+  border-radius: 5px;
+
+  font-size: 15px;
   font-family: "Roboto", sans-serif;
 
-  color: rgb(255, 255, 255);
-
-  cursor: pointer;
+  color: white;
 
   transition-duration: 0.3s;
 }
 
-.btn-edit_profil:hover {
+#save_acc:hover{
   background-color: #307dd7;
+}
+
+#cancel_acc{
+  width: 100px;
+  height: 38px;
+
+  background-color: #ddd;
+
+  border: solid 1px #999;
+  border-radius: 5px;
+
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+
+  color: #575757;
+
+  transition-duration: 0.3s;
+}
+
+#cancel_acc:hover{
+  background-color: #c6c6c6;
 }
 /* ------------------------------------------- */
 

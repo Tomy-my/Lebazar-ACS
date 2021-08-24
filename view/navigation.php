@@ -39,7 +39,6 @@
         </a>
     </div>
 
-
 <!-- Menu burger  -->
 
     <div class="burger_menu">
