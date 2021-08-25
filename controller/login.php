@@ -10,14 +10,17 @@ if(isset($_POST['submit'])){
 
         $password =sha1($_POST['password']);
 
-        $getdata = $db->prepare("SELECT email FROM utilisateur WHERE email=? and password = ?");
+        $getdata = $db->prepare("SELECT id, email FROM utilisateur WHERE email=? and password = ?");
         $getdata->execute(array($_POST['email'], $password));
 
         $rows = $getdata->rowCount();
-
+        $row = $getdata->fetch(PDO::FETCH_ASSOC);
+ 
         if($rows==true){
-            $_SESSION['admin']=$_POST['email'];
-            header("Location:./index.php");
+
+            $_SESSION['admin']=$row['id'];
+            
+            header("Location:./redirect.php");
 
         }else{
             $erreur = "E-mail ou mot de passe inconnus";

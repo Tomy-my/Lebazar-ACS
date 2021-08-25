@@ -12,10 +12,15 @@ if (empty($_SESSION['admin']))
 else
 {
     include('view/header.php');
-
+    
         include('view/navigation.php');
-    ?>
+    
+    include("controller/edit_acc.php");
+    
+    if (!isset($_REQUEST['update_id']))
+       header("Location: ../redirect.php");
 
+?>
     <div class="page_account">
         <div class="sous_nav">
 
@@ -47,32 +52,34 @@ else
                         <i class="fas fa-pencil-alt"></i>
                     </div>
                 </div>
-                <div class="inputPseudo">
-                    <label for="pseudo_acc">Pseudo</label>
-                    <input type="text" id="pseudo_acc" placeholder="Tomymy">
-                </div>
-                <div class="inputName">
-                    <div class="inputPrenom_">
-                        <label for="prenom_acc">Prénom</label>
-                        <input type="text" id="prenom_acc" placeholder="Tomy">
+                <form action="" method="post">
+                    <div class="inputPseudo">
+                        <label for="pseudo_acc">Pseudo</label>
+                        <input type="text" name="pseudo" id="pseudo_acc" value="<?php echo $pseudo; ?>">
                     </div>
-                    <div class="inputNom_">
-                        <label for="nom_acc">Nom</label>
-                        <input type="text" id="nom_acc" placeholder="Sotty">
+                    <div class="inputName">
+                        <div class="inputPrenom_">
+                            <label for="prenom_acc">Prénom</label>
+                            <input type="text" name="prenom" id="prenom_acc" value="<?php echo $prenom; ?>">
+                        </div>
+                        <div class="inputNom_">
+                            <label for="nom_acc">Nom</label>
+                            <input type="text" name="nom" id="nom_acc" value="<?php echo $nom; ?>">
+                        </div>
                     </div>
-                </div>
-                <div class="inputDate">
-                    <i class="far fa-calendar-alt"></i>
-                    <input type="text" id="date_acc"placeholder="26/02/2000">
-                </div>
-                <div class="inputMail">
-                    <i class="far fa-envelope"></i>
-                    <input type="text" id="mail_acc" placeholder="azerouto@gmail.com">
-                </div>
-                <div class="double_btn">
-                    <button id="save_acc">Sauvegarder</button>
-                    <button id="cancel_acc">Annuler</button>
-                </div>
+                    <div class="inputDate">
+                        <i class="far fa-calendar-alt"></i>
+                        <input type="date" name="naissance" id="date_acc" value="<?php echo $naissance; ?>">
+                    </div>
+                    <div class="inputMail">
+                        <i class="far fa-envelope"></i>
+                        <input type="email" name="email" id="mail_acc" value="<?php echo $email; ?>">
+                    </div>
+                    <div class="double_btn">
+                        <button id="save_acc" name="btn_update_acc">Sauvegarder</button>
+                        <a href="#"><button id="cancel_acc">Annuler</button></a>
+                    </div>
+                </form>
             </div>
 
             <div class="my_annonce">
