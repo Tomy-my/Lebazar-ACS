@@ -1,11 +1,11 @@
 <?php
 require_once('./model/config_bdd.php');
 
-if(isset($_REQUEST['update_id']))
+if(isset($_SESSION['admin']))
 {
     try
     {
-        $id = $_REQUEST['update_id'];
+        $id = $_SESSION['admin'];
         $select_stmt = $db->prepare('SELECT * FROM utilisateur WHERE id =:id'); 
         $select_stmt->bindParam(':id',$id);
         $select_stmt->execute(); 
@@ -15,7 +15,7 @@ if(isset($_REQUEST['update_id']))
     catch(PDOException $e)
     {
         $e->getMessage();
-    }
+    } 
     
 }
 
@@ -41,7 +41,7 @@ try
          
         if($update_stmt->execute())
         {
-            header("refresh:0; redirect.php");
+            header("refresh:0; account.php");
         }
     }
 }

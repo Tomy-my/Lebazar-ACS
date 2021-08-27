@@ -39,6 +39,14 @@ if(isset($_REQUEST['btn_insert_register']))
              
         }			
 		
+		$select_stmt=$db->prepare("SELECT * FROM utilisateur WHERE email=?");
+		$select_stmt->execute([$email]); 
+		$user = $select_stmt->fetch();
+		if ($user) {
+
+			$errorMsg="Adresse E-mail déjà existante";
+		}
+
 		if(!isset($errorMsg))
 		{
 			$insert_stmt=$db->prepare('INSERT INTO utilisateur(prenom,nom,naissance,pseudo,email,password) VALUES(:prenom,:nom,:naissance,:pseudo,:email,:password)');				

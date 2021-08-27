@@ -60,7 +60,6 @@ include("controller/register.php");
                 </div>
             </div>
             <span id="message">Attention &nbsp;<i class="fas fa-exclamation-triangle"></i><br>Les 2 mots de passe ne correspondent pas</span><br />
-            <!-- <p>Attention &nbsp;<i class="fas fa-exclamation-triangle"></i>  -->
 
             <button class="btn btn-lg btn-primary" type="submit" name="btn_insert_register">
                 Créer votre compte

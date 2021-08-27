@@ -17,8 +17,8 @@ else
     
     include("controller/edit_acc.php");
     
-    if (!isset($_REQUEST['update_id']))
-       header("Location: ../redirect.php");
+    // if (!isset($_REQUEST['update_id']))
+    //    header("Location: account.php");
 
 ?>
     <div class="page_account">
@@ -83,21 +83,31 @@ else
             </div>
 
             <div class="my_annonce">
+                <?php
+                    require_once("model/config_bdd.php");
+
+                    $select_stmt=$db->prepare("SELECT * FROM annonce WHERE id_utilisateur = '".$_SESSION['admin']."' ORDER BY id DESC");
+                    $select_stmt->execute();
+                    while($row=$select_stmt->fetch(PDO::FETCH_ASSOC))
+                    {
+                ?>
                 <div class="container_myAnnonce">
-                    <img src="public/images/2.png" alt="Aperçu de l'annonce">
+                    <img src="public/upload/<?php echo $row['image_file']; ?>" alt="Aperçu de l'annonce">
                     <a href="#">
                         <div class="show_ico"><i class="fas fa-external-link-alt"></i></div>
                     </a>
                     <div class="textContent_My">
-                        <h3>Titre de l'annonce</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nulla quaerat rerum harum minima dolores </p>
+                        <h3><?php echo $row['titre']; ?></h3>
+                        <p><?php echo $row['description']; ?></p>
                     </div>
                     <div class="btn-container-show">
                         <button class="btn btn-showAnnonce" type="submit" name="profil">Modifier</button>
                     </div>
                 </div>
-
-                <div class="container_myAnnonce">
+                <?php
+                    }
+                ?>
+                <!-- <div class="container_myAnnonce">
                     <img src="public/images/2.png" alt="img" class="imgAnnonce">
                     <a href="#"><div class="show_ico"><i class="fas fa-external-link-alt"></i></div></a>
                     <div class="textContent_My">
@@ -119,10 +129,10 @@ else
                     <div class="btn-container-show">
                         <button class="btn btn-showAnnonce" type="submit" name="profil">Modifier</button>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="container_myFavoris">
-                    <img src="public/images/2.png" alt="img" class="imgAnnonce">
+                    <img src="public/images/1.jpg" alt="img" class="imgAnnonce">
                     <a href="#"><div class="show_ico"><i class="fas fa-external-link-alt"></i></div></a>
                     <div class="textContent_My">
                         <h3>Titre de l'annonce</h3>
@@ -134,7 +144,7 @@ else
                 </div>
 
                 <div class="container_myFavoris">
-                    <img src="public/images/2.png" alt="img" class="imgAnnonce">
+                    <img src="public/images/1.jpg" alt="img" class="imgAnnonce">
                     <a href="#"><div class="show_ico"><i class="fas fa-external-link-alt"></i></div></a>
                     <div class="textContent_My">
                         <h3>Titre de l'annonce</h3>
@@ -146,7 +156,7 @@ else
                 </div>
 
                 <div class="container_myFavoris">
-                    <img src="public/images/2.png" alt="img" class="imgAnnonce">
+                    <img src="public/images/1.jpg" alt="img" class="imgAnnonce">
                     <a href="#"><div class="show_ico"><i class="fas fa-external-link-alt"></i></div></a>
                     <div class="textContent_My">
                         <h3>Titre de l'annonce</h3>

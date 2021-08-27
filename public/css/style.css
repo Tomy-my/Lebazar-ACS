@@ -371,18 +371,59 @@ input[type="search"]:focus {
 }
 
 .container_newAnnonce {
+  display: flex;
+  justify-content: space-around;
+
   width: 1160px;
-  height: 180px;
+  height: 550px;
 
   margin-top: 20px;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+
+  padding: 15px;
 
   background-color: rgb(249, 249, 249);
 
   border: solid 2px rgb(115, 115, 115);
 
   box-shadow: 0px 4px 9px 0px #0000002e;
+}
+
+.new_show_annonce {
+  width: 300px;
+  height: 100%;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: solid 2px;
+
+  box-shadow: 0px 4px 9px 0px #0000002e;
+}
+
+.show_img {
+  width: 100%;
+  height: 75%;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  border-bottom: solid 2px;
+
+  object-fit: cover;
+}
+
+.container_txt {
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container_txt p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 /* -------------------------------------------------------------- */
@@ -766,6 +807,7 @@ i.fa-exclamation-triangle {
 .message2 {
   width: 304px;
 
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
 
@@ -780,7 +822,7 @@ i.fa-exclamation-triangle {
   width: 306px;
   height: 54px;
 
-  margin-top: 10px;
+  margin-top: 0px;
 
   border-radius: 5px;
   border: solid 1px #737373;
@@ -950,7 +992,7 @@ i.fa-exclamation-triangle {
   background-color: white;
 }
 
-.settings input{
+.settings input {
   width: 100%;
   height: 37px;
 
@@ -968,11 +1010,11 @@ i.fa-exclamation-triangle {
   transition-duration: 0.2s;
 }
 
-.settings input:hover{
+.settings input:hover {
   background-color: #c6c6c6;
 }
 
-.settings input:focus{
+.settings input:focus {
   background-color: #c6c6c6;
 }
 
@@ -981,7 +1023,7 @@ i.fa-exclamation-triangle {
 }
 
 .inputName,
-.inputMail, 
+.inputMail,
 .inputDate {
   margin-top: 15px;
 }
@@ -1041,7 +1083,7 @@ i.fa-exclamation-triangle {
   margin-top: 20px;
 }
 
-#save_acc{
+#save_acc {
   width: 110px;
   height: 38px;
 
@@ -1058,11 +1100,11 @@ i.fa-exclamation-triangle {
   transition-duration: 0.3s;
 }
 
-#save_acc:hover{
+#save_acc:hover {
   background-color: #307dd7;
 }
 
-#cancel_acc{
+#cancel_acc {
   width: 100px;
   height: 38px;
 
@@ -1079,7 +1121,7 @@ i.fa-exclamation-triangle {
   transition-duration: 0.3s;
 }
 
-#cancel_acc:hover{
+#cancel_acc:hover {
   background-color: #c6c6c6;
 }
 /* ------------------------------------------- */
@@ -1095,11 +1137,13 @@ i.fa-exclamation-triangle {
   border-left: solid 2px #999;
 }
 
-.container_myAnnonce, .container_myFavoris {
+.container_myAnnonce,
+.container_myFavoris {
   width: 515px;
   height: 360px;
 
-  margin-top: 35px;
+  margin-top: 40px;
+  margin-bottom: 15px;
   margin-right: 60px;
 
   box-shadow: 0px 4px 9px 0px #0000008c;
@@ -1112,7 +1156,7 @@ i.fa-exclamation-triangle {
   object-fit: cover;
 }
 
-.show_ico{
+.show_ico {
   position: relative;
 
   top: -180px;
@@ -1137,11 +1181,11 @@ i.fa-exclamation-triangle {
   transition-duration: 0.3s;
 }
 
-.show_ico:hover{
+.show_ico:hover {
   color: white;
 }
 
-.textContent_My{
+.textContent_My {
   padding-top: 15px;
   padding-left: 15px;
 }
@@ -1185,16 +1229,239 @@ i.fa-exclamation-triangle {
   background-color: rgb(238, 79, 0);
 }
 
-.active{
+.active {
   color: #f50;
 }
-.notActive{
+.notActive {
   color: #575757;
 }
 
-.hr_active{
+.hr_active {
   background-color: #f50;
 }
-.hr_notActive{
+.hr_notActive {
   color: #f500;
 }
+
+/* -------------------------------------------------------------- */
+
+/* ------------------------------- Add annonce ------------------------------- */
+.page_addAnnonce {
+  width: 100%;
+  height: 100vh;
+
+  background-image: url("../images/bannerLogin.svg"),
+    url("../images/rondDeco.svg");
+  background-repeat: no-repeat;
+  background-size: 1200px;
+  background-position: bottom, top;
+}
+
+.container_addAnnonce {
+  width: 700px;
+  height: 905px;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 25px 10px 25px;
+
+  background-color: #e3e3e3f7;
+
+  border-radius: 20px;
+  box-shadow: 0px 4px 9px 0px #00000052;
+
+  text-align: center;
+
+  animation: 1.8s ease LoginForm;
+}
+
+.container_addAnnonce h2 {
+  margin-bottom: 10px;
+
+  font-size: 27px;
+  letter-spacing: 1px;
+}
+
+.double_input {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container_titre,
+.container_categorie,
+.container_prix,
+.container_fake,
+.container_image,
+.container_desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  position: relative;
+
+  width: 304px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
+  border: solid 1px #737373;
+}
+
+.container_image {
+  width: 646px;
+
+  margin-bottom: 15px;
+  margin-left: 17px;
+  margin-right: 0px;
+}
+
+.container_desc {
+  width: 646px;
+  height: 220px;
+
+  margin-top: 30px;
+}
+
+.container_desc .ico_ {
+  height: 218px;
+}
+
+#inputTitre,
+#inputCategorie,
+#inputPrix,
+#inputFake,
+#inputImage,
+#inputDesc {
+  width: 250px;
+  height: 54px;
+
+  padding-left: 15px;
+
+  border: none;
+  background-color: #ffffff5c;
+
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+
+  color: #000;
+
+  letter-spacing: 1px;
+
+  transition-duration: 0.2s;
+}
+
+#inputImage,
+#inputDesc {
+  width: 590px;
+}
+
+#inputCategorie,
+#inputImage,
+#inputDesc {
+  color: #6e6e6e;
+}
+
+#inputImage {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#inputDesc {
+  height: 218px;
+
+  padding-top: 15px;
+
+  resize: none;
+}
+
+#inputTitre:focus,
+#inputCategorie:focus,
+#inputPrix:focus,
+#inputImage:focus,
+#inputDesc:focus {
+  background-color: #f9f9f9;
+}
+
+#inputTitre:hover,
+#inputCategorie:hover,
+#inputPrix:hover,
+#inputImage:hover,
+#inputDesc:hover {
+  background-color: #f9f9f9;
+}
+
+.container_fake,
+#inputFake {
+  opacity: 0;
+
+  cursor: default;
+}
+
+/* -------------------------------------------------------------- */
+
+/* ------------------------------- Show Annonce ------------------------------- */
+.page_annonce {
+  width: 100%;
+  height: 100vh;
+
+  background-image: url("../images/bannerLogin.svg"),
+    url("../images/rondDeco.svg");
+  background-repeat: no-repeat;
+  background-size: 1200px;
+  background-position: bottom, top;
+}
+
+.container_annonce {
+  width: 70vw;
+  height: 905px;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 50px 35px 50px;
+
+  background-color: #e3e3e3d9;
+
+  border-radius: 20px;
+  border: solid 2px rgba(59, 65, 72, 0.51);
+  box-shadow: 0px 4px 9px 0px #00000052;
+
+  text-align: center;
+
+  animation: 1.8s ease LoginForm;
+}
+
+.top_annonce{
+  display: flex;
+}
+
+.top_left{
+  width: 50%;
+  height: 85px;
+
+  text-align: initial;
+}
+
+.top_left h1{
+  font-weight: 500;
+}
+
+.top_left h2{
+  margin-top: 15px;
+
+  padding-left: 55px;
+
+  font-weight: 400;
+}
+
+.top_right{
+  width: 50%;
+  height: 85px;
+}
+

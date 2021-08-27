@@ -32,7 +32,7 @@
     </div>
 
     <div id="profil" >
-        <a href="./redirect.php">
+        <a href="./account.php">
             <i class="far fa-user"></i>
             <br>
             Mon compte

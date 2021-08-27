@@ -20,7 +20,7 @@ if(isset($_POST['submit'])){
 
             $_SESSION['admin']=$row['id'];
             
-            header("Location:./redirect.php");
+            header("Location:./account.php");
 
         }else{
             $erreur = "E-mail ou mot de passe inconnus";
