@@ -107,30 +107,6 @@ else
                 <?php
                     }
                 ?>
-                <!-- <div class="container_myAnnonce">
-                    <img src="public/images/2.png" alt="img" class="imgAnnonce">
-                    <a href="#"><div class="show_ico"><i class="fas fa-external-link-alt"></i></div></a>
-                    <div class="textContent_My">
-                        <h3>Titre de l'annonce</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nulla quaerat rerum harum minima dolores </p>
-                    </div>
-                    <div class="btn-container-show">
-                        <button class="btn btn-showAnnonce" type="submit" name="profil">Modifier</button>
-                    </div>
-                </div>
-
-                <div class="container_myAnnonce">
-                    <img src="public/images/2.png" alt="img" class="imgAnnonce">
-                    <a href="#"><div class="show_ico"><i class="fas fa-external-link-alt"></i></div></a>
-                    <div class="textContent_My">
-                        <h3>Titre de l'annonce</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nulla quaerat rerum harum minima dolores </p>
-                    </div>
-                    <div class="btn-container-show">
-                        <button class="btn btn-showAnnonce" type="submit" name="profil">Modifier</button>
-                    </div>
-                </div> -->
-
                 <div class="container_myFavoris">
                     <img src="public/images/1.jpg" alt="img" class="imgAnnonce">
                     <a href="#"><div class="show_ico"><i class="fas fa-external-link-alt"></i></div></a>

@@ -6,42 +6,189 @@ include('view/header.php');
     include('view/navigation.php');
 include("controller/register.php");
 ?>
-<div class="page_annonce">
-    <div class="container_annonce">
-        <div class="top_annonce">
-            <div class="top_left">
-                <h1>Le<span id="B">b</span>azar<br></h1>
-                <h2>Les annonces</h2>
-            </div>
-            <div class="top_right">
+    <div class="page_annonce">
+        <div class="_sous_nav">
 
-            </div>
+                <div id="annonce_sn_annonce" >
+                    <i class="far fa-list-alt"></i>&nbsp;
+                    Annonce
+                    <hr id="hr_annonce" style="background-color: #f50;">
+                </div>
+
+                <div id="catCar" >
+                    <i class="fas fa-car-side"></i>&nbsp;
+                    Voitures
+                    <hr id="hr_catCar">
+                </div>
+
+                <div id="catBike" >
+                    <i class="fas fa-motorcycle"></i>&nbsp;
+                    Motos
+                    <hr id="hr_catBike">
+                </div>
+
+                <div id="catBoat" >
+                    <i class="fas fa-anchor"></i>&nbsp;
+                    Nautiques
+                    <hr id="hr_catBoat">
+                </div>
+
+                <div id="catHouse" >
+                    <i class="fas fa-building"></i>&nbsp;
+                    Maisons
+                    <hr id="hr_catHouse">
+                </div>
+
+                <div id="catOther" >
+                <i class="fas fa-folder-open"></i>&nbsp;
+                    Autres
+                    <hr id="hr_catOther">
+                </div>
         </div>
         <div class="annonce">
-            <div class="ct_img_annonce">
-                <img src="#" alt="#">
-            </div>
-            <div class="txt_annonce">
-                <h3>Titre de l'annonce</h3>
-                <p>20 000€</p>
-                <div class="under_txt">
-                    <p>
-                        Dans le monde, en Fance
-                        <br>
-                        Le 10/02/200
-                    </p>
+            <div class="_annonce">
+                <div class="_imgAnnonce"style="background-image: url('public/images/1.jpg');"> </div>
+                <div class="_txtAnnonce">
+                    <div class="top">
+                        <h2>Zodiac Yamaha</h2>
+                        <h3>45 000€</h3>
+                    </div>
+                    <div class="middle">
+                        <div class="_catAnnonce">
+                            Nautique
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iusto recusandae cum eligendi! Harum totam fugit deserunt delectus omnis aliquam, soluta mollitia aperiam fuga ullam deleniti cumque quam debitis voluptatum?
+                        </p>
+                    </div>
+                    <div class="_copyright">
+                        Tomy Sotty&nbsp;&nbsp;&nbsp;12/02/2020
+                    </div>
                 </div>
             </div>
-            <div class="heart">
-                icone
+
+            <div class="_annonceCar">
+                <div class="_imgAnnonce"style="background-image: url('public/images/1.jpg');"> </div>
+                <div class="_txtAnnonce">
+                    <div class="top">
+                        <h2>Zodiac Yamaha</h2>
+                        <h3>45 000€</h3>
+                    </div>
+                    <div class="middle">
+                        <div class="_catAnnonce">
+                            Nautique
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iusto recusandae cum eligendi! Harum totam fugit deserunt delectus omnis aliquam, soluta mollitia aperiam fuga ullam deleniti cumque quam debitis voluptatum?
+                        </p>
+                    </div>
+                    <div class="_copyright">
+                        Tomy Sotty&nbsp;&nbsp;&nbsp;12/02/2020
+                    </div>
+                </div>
+            </div>
+
+            <div class="_annonceBike">
+                <div class="_imgAnnonce"style="background-image: url('public/images/1.jpg');"> </div>
+                <div class="_txtAnnonce">
+                    <div class="top">
+                        <h2>Zodiac Yamaha</h2>
+                        <h3>45 000€</h3>
+                    </div>
+                    <div class="middle">
+                        <div class="_catAnnonce">
+                            Nautique
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iusto recusandae cum eligendi! Harum totam fugit deserunt delectus omnis aliquam, soluta mollitia aperiam fuga ullam deleniti cumque quam debitis voluptatum?
+                        </p>
+                    </div>
+                    <div class="_copyright">
+                        Tomy Sotty&nbsp;&nbsp;&nbsp;12/02/2020
+                    </div>
+                </div>
+            </div>
+
+            <div class="_annonceBoat">
+                <div class="_imgAnnonce"style="background-image: url('public/images/1.jpg');"> </div>
+                <div class="_txtAnnonce">
+                    <div class="top">
+                        <h2>Zodiac Yamaha</h2>
+                        <h3>45 000€</h3>
+                    </div>
+                    <div class="middle">
+                        <div class="_catAnnonce">
+                            Nautique
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iusto recusandae cum eligendi! Harum totam fugit deserunt delectus omnis aliquam, soluta mollitia aperiam fuga ullam deleniti cumque quam debitis voluptatum?
+                        </p>
+                    </div>
+                    <div class="_copyright">
+                        Tomy Sotty&nbsp;&nbsp;&nbsp;12/02/2020
+                    </div>
+                </div>
+            </div>
+
+            <div class="_annonceHouse">
+                <div class="_imgAnnonce"style="background-image: url('public/images/1.jpg');"> </div>
+                <div class="_txtAnnonce">
+                    <div class="top">
+                        <h2>Zodiac Yamaha</h2>
+                        <h3>45 000€</h3>
+                    </div>
+                    <div class="middle">
+                        <div class="_catAnnonce">
+                            Nautique
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iusto recusandae cum eligendi! Harum totam fugit deserunt delectus omnis aliquam, soluta mollitia aperiam fuga ullam deleniti cumque quam debitis voluptatum?
+                        </p>
+                    </div>
+                    <div class="_copyright">
+                        Tomy Sotty&nbsp;&nbsp;&nbsp;12/02/2020
+                    </div>
+                </div>
+            </div>
+
+            <div class="_annonceOther">
+                <div class="_imgAnnonce"style="background-image: url('public/images/1.jpg');"> </div>
+                <div class="_txtAnnonce">
+                    <div class="top">
+                        <h2>Zodiac Yamaha</h2>
+                        <h3>45 000€</h3>
+                    </div>
+                    <div class="middle">
+                        <div class="_catAnnonce">
+                            Nautique
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iusto recusandae cum eligendi! Harum totam fugit deserunt delectus omnis aliquam, soluta mollitia aperiam fuga ullam deleniti cumque quam debitis voluptatum?
+                        </p>
+                    </div>
+                    <div class="_copyright">
+                        Tomy Sotty&nbsp;&nbsp;&nbsp;12/02/2020
+                    </div>
+                </div>
             </div>
 
         </div>
     </div>
-    
 </div>
 
-<script type="text/javascript" src="./public/js/password.js"></script>
+    <script type="text/javascript" src="./public/js/cat.js"></script>
 
 <?php    
 include('view/footer.php');    

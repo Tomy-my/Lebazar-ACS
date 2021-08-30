@@ -36,12 +36,11 @@ else
                     </div>
                     <select  name="categorie" id="inputCategorie">
                         <option selected disabled>Catégorie :</option>
-                        <option value="dog">Voitures</option>
-                        <option value="cat">Motos</option>
-                        <option value="hamster">Bateaux</option>
-                        <option value="parrot">Maisons</option>
-                        <option value="spider">Appartements</option>
-                        <option value="goldfish">Autres</option>
+                        <option value="Voitures">Voitures</option>
+                        <option value="Moto">Motos</option>
+                        <option value="Nautique">Nautiques</option>
+                        <option value="Maison">Maisons</option>
+                        <option value="Autre">Autres</option>
                     </select>
                 </div>
             </div>

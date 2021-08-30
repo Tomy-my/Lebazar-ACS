@@ -1404,64 +1404,210 @@ i.fa-exclamation-triangle {
 /* -------------------------------------------------------------- */
 
 /* ------------------------------- Show Annonce ------------------------------- */
-.page_annonce {
-  width: 100%;
-  height: 100vh;
 
-  background-image: url("../images/bannerLogin.svg"),
-    url("../images/rondDeco.svg");
-  background-repeat: no-repeat;
-  background-size: 1200px;
-  background-position: bottom, top;
+.page_annonce {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+
+  margin-top: 35px;
 }
 
-.container_annonce {
-  width: 70vw;
-  height: 905px;
+._sous_nav {
+  display: flex;
+  justify-content: center;
 
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  height: 50px;
 
-  padding: 50px 35px 50px;
+  border-bottom: solid 2px #999;
 
-  background-color: #e3e3e3d9;
+  background-color: #e3e3e3;
+}
 
-  border-radius: 20px;
-  border: solid 2px rgba(59, 65, 72, 0.51);
-  box-shadow: 0px 4px 9px 0px #00000052;
+#annonce_sn_annonce,
+#catCar,
+#catBike,
+#catBoat,
+#catHouse,
+#catOther {
+  width: 145px;
+
+  margin-top: auto;
+  margin-bottom: auto;
 
   text-align: center;
 
-  animation: 1.8s ease LoginForm;
+  cursor: pointer;
 }
 
-.top_annonce{
+#annonce_sn_annonce hr,
+#catCar hr,
+#catBike hr,
+#catBoat hr,
+#catHouse hr,
+#catOther hr{
+  height: 3px;
+
+  margin-top: 13px;
+  margin-bottom: -14px;
+
+  border: none;
+  border-radius: 15px;
+
+  transition: all 0.2s ease;
+}
+
+#annonce_sn_annonce:hover hr,
+#catCar:hover hr,
+#catBike:hover hr,
+#catBoat:hover hr,
+#catHouse:hover hr,
+#catOther:hover hr {
+  background-color: #f50;
+}
+
+#annonce_sn_annonce a i,
+#catCar a i,
+#catBike a i,
+#catBoat a i,
+#catHouse a i,
+#catOther a i {
+  transition: all 0.3s ease;
+}
+
+#annonce_sn_annonce .fa-list-alt {
+  color: #f50;
+}
+
+#annonce_sn_annonce .fa-user,
+#catCar .fa-car-side,
+#catBike .fa-motorcycle,
+#catBoat .fa-anchor,
+#catHouse .fa-building,
+#catOther .fa-folder-open {
+  font-size: 18px;
+}
+
+/* ------------------------------------------- */
+
+.annonce {
   display: flex;
+  flex-wrap: wrap;
+
+  width: 60%;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 }
 
-.top_left{
-  width: 50%;
-  height: 85px;
+._annonce,
+._annonceCar,
+._annonceBike,
+._annonceBoat,
+._annonceHouse,
+._annonceOther {
+  display: flex;
 
-  text-align: initial;
+  width: 100%;
+  height: 230px;
+
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 
-.top_left h1{
+._imgAnnonce {
+  width: 968px;
+  height: 100%;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  object-fit: cover;
+
+  box-shadow: 0px 4px 9px 0px #00000082;
+}
+
+._txtAnnonce {
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+._txtAnnonce .top {
+  display: flex;
+
+  margin-bottom: 10px;
+}
+
+._txtAnnonce .top h2 {
+  margin-right: auto;
+
+  font-size: 27px;
   font-weight: 500;
 }
 
-.top_left h2{
-  margin-top: 15px;
+._txtAnnonce .top h3 {
+  margin-left: auto;
 
-  padding-left: 55px;
+  font-size: 21px;
+  font-weight: 500;
 
+  color: #f50;
+}
+
+._txtAnnonce .middle {
+  margin-bottom: 45px;
+}
+
+._catAnnonce{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 93px;
+  height: 25px;
+
+  background-color: #f50;
+
+  border: solid 2px #e85e1a;
+  border-radius: 10px;
+  box-shadow: 0px 4px 9px 0px #0000003b;
+
+  text-align: center;
+
+  font-size: 16px;
+
+  color: white;
+}
+
+._txtAnnonce .bottom{
+  margin-bottom: 20px;
+}
+
+._txtAnnonce ._copyright{
+  font-style: italic;
+  font-weight: 300;
+}
+
+._txtAnnonce ._copyright span{
   font-weight: 400;
+  font-style: normal;
 }
 
-.top_right{
-  width: 50%;
-  height: 85px;
+/* .active {
+  color: #f50;
+}
+.notActive {
+  color: #575757;
 }
 
+.hr_active {
+  background-color: #f50;
+}
+.hr_notActive {
+  color: #f500;
+}  */
