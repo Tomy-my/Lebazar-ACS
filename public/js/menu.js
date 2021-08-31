@@ -63,3 +63,20 @@ $(document).ready(function () {
       }
     }
   }); 
+
+
+  var iLongueur, iLongueurRestante;
+  iLongueur = document.querySelector('.flm').textContent.length;
+  if (iLongueur>120) {
+     document.querySelector('.flm').textContent = document.querySelector('.flm').textContent.substring(0,120);
+     iLongueurRestante = 0;
+  }
+  else {
+     iLongueurRestante = 120 - iLongueur;
+  }
+
+  let allp = document.querySelectorAll('.flm');
+  for (let i=0; i < allp.length; i++)
+  {
+      allp[i].textContent = allp[i].textContent.substring(0,120) + "...";
+  };

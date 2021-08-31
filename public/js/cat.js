@@ -1,121 +1,330 @@
-$(document).ready(function () {
+// Selectionne les menus 
+let annonceAll = document.querySelector("#annonce_sn_annonce");
+let car = document.querySelector("#catCar");
+let bike = document.querySelector("#catBike");
+let boat = document.querySelector("#catBoat");
+let house = document.querySelector("#catHouse");
+let other = document.querySelector("#catOther");
 
-  $("#annonce_sn_annonce");  
-  $("._annonce").show();
+// Selectionne les actifs des menus 
+let icoCar = document.querySelector(".fa-car-side");
+let hrCar = document.querySelector("#hr_catCar");
 
-    $("#catCar");
-    $("#catCar .fa-car-side").addClass("notActive");
-    $("#hr_catCar").addClass("hr_Notactive");
-    
-    $("#catBike");
-    $("#catBike .fa-motorcycle").addClass("notActive");
-    $("#hr_catBike").addClass("hr_Notactive");
+let icoBike = document.querySelector(".fa-motorcycle");
+let hrBike = document.querySelector("#hr_catBike");
 
-    $("#catBoat");
-    $("#catBoat .fa-anchor").addClass("notActive");
-    $("#hr_catBoat").addClass("hr_Notactive");
+let icoBoat = document.querySelector(".fa-anchor");
+let hrBoat = document.querySelector("#hr_catBoat");
 
-    $("#catHouse");
-    $("#catHouse .fa-building").addClass("notActive");
-    $("#hr_catHouse").addClass("hr_Notactive");
+let icoHouse = document.querySelector(".fa-building");
+let hrHouse = document.querySelector("#hr_catHouse");
 
-    $("#catOther");
-    $("#catOther .fa-folder-open").addClass("notActive");
-    $("#hr_catOther").addClass("hr_Notactive");
+let icoOther = document.querySelector(".fa-folder-open");
+let hrOther = document.querySelector("#hr_catOther");
 
-    $("._annonceCar").hide();
-    $("._annonceBike").hide();
-    $("._annonceBoat").hide();
-    $("._annonceHouse").hide();
-    $("._annonceOther").hide();
-  
-    var show_speed = 900;
-    var hide_speed = 0;
-  
-    var tab1_isvisible = true;
-    var tab2_isvisible = false;
-    var tab3_isvisible = false;
-    var tab4_isvisible = false;
-    var tab5_isvisible = false;
-    var tab6_isvisible = false;
+// Selectionne les container des catégories 
+let containerAnnonce = document.querySelector(".annonceAll");
+let containerCar = document.querySelector(".ct_annonceCar");
+let containerBike = document.querySelector(".ct_annonceBike");
+let containerBoat = document.querySelector(".ct_annonceBoat");
+let containerHouse = document.querySelector(".ct_annonceHouse");
+let containerOther = document.querySelector(".ct_annonceOther");
 
 
-  
-    $("#annonce_sn_annonce").click(function () {
-      hideA(1);
-    });
-    $("#catCar").click(function () {
-      hideA(2);
-    });
-    $("#catBike").click(function () {
-      hideA(3);
-    });
-    $("#catBoat").click(function () {
-      hideA(4);
-    });
-    $("#catHouse").click(function () {
-      hideA(5);
-    });
-    $("#catOther").click(function () {
-      hideA(6);
-    });
-    
-    function hideA(id) {
-      switch (id) {
-        case 1:
-          if (tab2_isvisible) {
-            $("._annonceCar").fadeOut(hide_speed);
-            tab2_isvisible = false;
-            $("#catCar .fa-car-side").removeClass("active");
-            $("#catCar .fa-car-side").addClass("notActive");
-            $("#hr_catCar").removeClass("hr_active");
-            $("#hr_catCar").addClass("hr_notActive");
-          }
-          if (!tab1_isvisible) {
-            $("._annonce").fadeIn(show_speed);
-            tab1_isvisible = true;
-            tab3_isvisible = true;
-            tab4_isvisible = true;
-            tab5_isvisible = true;
+//On affiche ceux appartenant à la catégorie Voiture
+annonceAll.addEventListener("click", function(){
 
-          }
-          break;
-        case 2:
-          if (tab1_isvisible) {
-            $("._annonce").fadeOut(hide_speed);
-            tab1_isvisible = false;
+  //On fait disparaitre tous les autres actifs
+  icoCar.style.color = "#575757";
+  hrCar.style.backgroundColor = "rgba(255, 85, 0, 0)";
 
-          }
-          if (!tab2_isvisible) {
-            $("._annonceCar").fadeIn(show_speed);
-            $("#catCar .fa-car-side").addClass("active");
-            $("#catCar .fa-car-side").removeClass("notActive");
-            $("#hr_catCar").addClass("hr_active");
-            $("#hr_catCar").removeClass("hr_notActive");
-            tab2_isvisible = true;
-            tab3_isvisible = true;
-            tab4_isvisible = true;
-            tab5_isvisible = true;
-          }
-          break;
-          case 3:
-            if (tab3_isvisible) {
-              $("._annonceBike").fadeOut(hide_speed);
-              tab3_isvisible = false;
-  
-            }
-            if (!tab3_isvisible) {
-              $("._annonceBike").fadeIn(show_speed);
-              $("#catCar .fa-motorcycle").addClass("active");
-              $("#catCar .fa-motorcycle").removeClass("notActive");
-              $("#hr_catBike").addClass("hr_active");
-              $("#hr_catBike").removeClass("hr_notActive");
-              tab1_isvisible = true;
-              tab2_isvisible = true;
-              tab4_isvisible = true;
-              tab5_isvisible = true;
-            }
-            break;
-      }
-    }
-  }); 
+  icoBike.style.color = "#575757";
+  hrBike.style.backgroundColor = "rgba(255, 85, 0, 0)";
+
+  icoBoat.style.color = "#575757";
+  hrBoat.style.backgroundColor = "rgba(255, 85, 0, 0)";
+
+  icoHouse.style.color = "#575757";
+  hrHouse.style.backgroundColor = "rgba(255, 85, 0, 0)";
+
+  icoOther.style.color = "#575757";
+  hrOther.style.backgroundColor = "rgba(255, 85, 0, 0)";
+
+
+  //On fait disparaitre les container
+  containerCar.style.opacity = "0";
+  containerBike.style.opacity = "0";
+  containerBoat.style.opacity = "0";
+  containerHouse.style.opacity = "0";
+  containerOther.style.opacity = "0";
+
+  //On supprime 
+  setTimeout(function (){
+    containerCar.style.display = "none";
+    containerBike.style.display = "none";
+    containerBoat.style.display = "none";
+    containerHouse.style.display = "none";
+    containerOther.style.display = "none";
+  },700);
+
+
+  //Et on affiche
+  setTimeout(function (){
+    containerAnnonce.style.display = "flex";
+  },750);
+
+  setTimeout(function (){
+    containerAnnonce.style.opacity = "1";
+
+  },800);
+})
+
+
+//On affiche ceux appartenant à la catégorie Voiture
+car.addEventListener("click", function(){
+  //On active le bouton selectionner
+  icoCar.style.color = "#f50";
+  hrCar.style.backgroundColor = "#f50";
+
+
+  //On fait disparaitre tous les autres actifs
+  icoBike.style.color = "#575757";
+  hrBike.style.backgroundColor = "rgba(255, 85, 0, 0)";
+
+  icoBoat.style.color = "#575757";
+  hrBoat.style.backgroundColor = "rgba(255, 85, 0, 0)";
+
+  icoHouse.style.color = "#575757";
+  hrHouse.style.backgroundColor = "rgba(255, 85, 0, 0)";
+
+  icoOther.style.color = "#575757";
+  hrOther.style.backgroundColor = "rgba(255, 85, 0, 0)";
+
+
+  //On fait disparaitre les container
+  containerAnnonce.style.opacity = "0";
+  containerBike.style.opacity = "0";
+  containerBoat.style.opacity = "0";
+  containerHouse.style.opacity = "0";
+  containerOther.style.opacity = "0";
+
+  //On supprime 
+  setTimeout(function (){
+    containerAnnonce.style.display = "none";
+    containerBike.style.display = "none";
+    containerBoat.style.display = "none";
+    containerHouse.style.display = "none";
+    containerOther.style.display = "none";
+  },700);
+
+
+  //Et on affiche
+  setTimeout(function (){
+    containerCar.style.display = "flex";
+  },750);
+
+  setTimeout(function (){
+    containerCar.style.opacity = "1";
+
+  },800);
+})
+
+
+//On affiche ceux appartenant à la catégorie Moto
+bike.addEventListener("click", function(){
+  //On active le bouton selectionner
+  icoBike.style.color = "#f50";
+  hrBike.style.backgroundColor = "#f50";
+
+
+  //On fait disparaitre tous les autres actifs
+  icoCar.style.color = "#575757";
+  hrCar.style.backgroundColor = "rgba(255, 85, 0, 0)";
+
+  icoBoat.style.color = "#575757";
+  hrBoat.style.backgroundColor = "rgba(255, 85, 0, 0)";
+
+  icoHouse.style.color = "#575757";
+  hrHouse.style.backgroundColor = "rgba(255, 85, 0, 0)";
+
+  icoOther.style.color = "#575757";
+  hrOther.style.backgroundColor = "rgba(255, 85, 0, 0)";
+
+
+  //On fait disparaitre les container
+  containerAnnonce.style.opacity = "0";
+  containerCar.style.opacity = "0";
+  containerBoat.style.opacity = "0";
+  containerHouse.style.opacity = "0";
+  containerOther.style.opacity = "0";
+
+  //On supprime 
+  setTimeout(function (){
+    containerAnnonce.style.display = "none";
+    containerCar.style.display = "none";
+    containerBoat.style.display = "none";
+    containerHouse.style.display = "none";
+    containerOther.style.display = "none";
+  },700);
+
+
+  //Et on affiche
+  setTimeout(function (){
+    containerBike.style.display = "flex";
+  },750);
+
+  setTimeout(function (){
+    containerBike.style.opacity = "1";
+
+  },800);
+})
+
+
+//On affiche ceux appartenant à la catégorie Nautique
+boat.addEventListener("click", function(){
+  //On active le bouton selectionner
+  icoBoat.style.color = "#f50";
+  hrBoat.style.backgroundColor = "#f50";
+
+
+  //On fait disparaitre tous les autres actifs
+  icoCar.style.color = "#575757";
+  hrCar.style.backgroundColor = "rgba(255, 85, 0, 0)";
+
+  icoBike.style.color = "#575757";
+  hrBike.style.backgroundColor = "rgba(255, 85, 0, 0)";
+
+  icoHouse.style.color = "#575757";
+  hrHouse.style.backgroundColor = "rgba(255, 85, 0, 0)";
+
+  icoOther.style.color = "#575757";
+  hrOther.style.backgroundColor = "rgba(255, 85, 0, 0)";
+
+
+  //On fait disparaitre les container
+  containerAnnonce.style.opacity = "0";
+  containerCar.style.opacity = "0";
+  containerBike.style.opacity = "0";
+  containerHouse.style.opacity = "0";
+  containerOther.style.opacity = "0";
+
+  //On supprime 
+  setTimeout(function (){
+    containerAnnonce.style.display = "none";
+    containerCar.style.display = "none";
+    containerBike.style.display = "none";
+    containerHouse.style.display = "none";
+    containerOther.style.display = "none";
+  },700);
+
+
+  //Et on affiche
+  setTimeout(function (){
+    containerBoat.style.display = "flex";
+  },750);
+
+  setTimeout(function (){
+    containerBoat.style.opacity = "1";
+
+  },800);
+})
+
+
+//On affiche ceux appartenant à la catégorie House
+house.addEventListener("click", function(){
+  //On active le bouton selectionner
+  icoHouse.style.color = "#f50";
+  hrHouse.style.backgroundColor = "#f50";
+
+
+  //On fait disparaitre tous les autres actifs
+  icoCar.style.color = "#575757";
+  hrCar.style.backgroundColor = "rgba(255, 85, 0, 0)";
+
+  icoBike.style.color = "#575757";
+  hrBike.style.backgroundColor = "rgba(255, 85, 0, 0)";
+
+  icoBoat.style.color = "#575757";
+  hrBoat.style.backgroundColor = "rgba(255, 85, 0, 0)";
+
+  icoOther.style.color = "#575757";
+  hrOther.style.backgroundColor = "rgba(255, 85, 0, 0)";
+
+
+  //On fait disparaitre les container
+  containerAnnonce.style.opacity = "0";
+  containerCar.style.opacity = "0";
+  containerBike.style.opacity = "0";
+  containerBoat.style.opacity = "0";
+  containerOther.style.opacity = "0";
+
+  //On supprime 
+  setTimeout(function (){
+    containerAnnonce.style.display = "none";
+    containerCar.style.display = "none";
+    containerBike.style.display = "none";
+    containerBoat.style.display = "none";
+    containerOther.style.display = "none";
+  },700);
+
+
+  //Et on affiche
+  setTimeout(function (){
+    containerHouse.style.display = "flex";
+  },750);
+
+  setTimeout(function (){
+    containerHouse.style.opacity = "1";
+
+  },800);
+})
+
+
+//On affiche ceux appartenant à la catégorie Other
+other.addEventListener("click", function(){
+  //On active le bouton selectionner
+  icoOther.style.color = "#f50";
+  hrOther.style.backgroundColor = "#f50";
+
+
+  //On fait disparaitre tous les autres actifs
+  icoCar.style.color = "#575757";
+  hrCar.style.backgroundColor = "rgba(255, 85, 0, 0)";
+
+  icoBike.style.color = "#575757";
+  hrBike.style.backgroundColor = "rgba(255, 85, 0, 0)";
+
+  icoBoat.style.color = "#575757";
+  hrBoat.style.backgroundColor = "rgba(255, 85, 0, 0)";
+
+  icoHouse.style.color = "#575757";
+  hrHouse.style.backgroundColor = "rgba(255, 85, 0, 0)";
+
+
+  //On fait disparaitre les container
+  containerAnnonce.style.opacity = "0";
+  containerCar.style.opacity = "0";
+  containerBike.style.opacity = "0";
+  containerBoat.style.opacity = "0";
+  containerHouse.style.opacity = "0";
+
+  //On supprime 
+  setTimeout(function (){
+    containerAnnonce.style.display = "none";
+    containerCar.style.display = "none";
+    containerBike.style.display = "none";
+    containerBoat.style.display = "none";
+    containerHouse.style.display = "none";
+  },700);
+
+
+  //Et on affiche
+  setTimeout(function (){
+    containerOther.style.display = "flex";
+  },750);
+
+  setTimeout(function (){
+    containerOther.style.opacity = "1";
+
+  },800);
+})

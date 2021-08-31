@@ -374,8 +374,8 @@ input[type="search"]:focus {
   display: flex;
   justify-content: space-around;
 
-  width: 1160px;
-  height: 550px;
+  width: 63%;
+  height: 200px;
 
   margin-top: 20px;
   margin-bottom: 30px;
@@ -389,41 +389,6 @@ input[type="search"]:focus {
   border: solid 2px rgb(115, 115, 115);
 
   box-shadow: 0px 4px 9px 0px #0000002e;
-}
-
-.new_show_annonce {
-  width: 300px;
-  height: 100%;
-
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border: solid 2px;
-
-  box-shadow: 0px 4px 9px 0px #0000002e;
-}
-
-.show_img {
-  width: 100%;
-  height: 75%;
-
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-
-  border-bottom: solid 2px;
-
-  object-fit: cover;
-}
-
-.container_txt {
-  padding-top: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.container_txt p {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 
 /* -------------------------------------------------------------- */
@@ -1448,7 +1413,7 @@ i.fa-exclamation-triangle {
 #catBike hr,
 #catBoat hr,
 #catHouse hr,
-#catOther hr{
+#catOther hr {
   height: 3px;
 
   margin-top: 13px;
@@ -1504,12 +1469,11 @@ i.fa-exclamation-triangle {
   margin-bottom: 50px;
 }
 
-._annonce,
-._annonceCar,
-._annonceBike,
-._annonceBoat,
-._annonceHouse,
-._annonceOther {
+/* .annonce a {
+  width: 105%;
+} */
+
+._annonce{
   display: flex;
 
   width: 100%;
@@ -1517,6 +1481,39 @@ i.fa-exclamation-triangle {
 
   margin-top: 35px;
   margin-bottom: 35px;
+
+  opacity: 1;
+
+  transition-duration: 1s;
+}
+
+.annonceAll,
+.ct_annonceCar,
+.ct_annonceBike,
+.ct_annonceBoat,
+.ct_annonceHouse,
+.ct_annonceOther {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 230px;
+
+  margin-top: 35px;
+  margin-bottom: 35px;
+
+  opacity: 1;
+
+  transition-duration: 1s;
+}
+
+.ct_annonceCar,
+.ct_annonceBike,
+.ct_annonceBoat,
+.ct_annonceHouse,
+.ct_annonceOther {
+  display: none;
+
 }
 
 ._imgAnnonce {
@@ -1532,6 +1529,8 @@ i.fa-exclamation-triangle {
 }
 
 ._txtAnnonce {
+  width: 144%;
+
   padding-top: 10px;
   padding-left: 25px;
   padding-right: 25px;
@@ -1546,7 +1545,7 @@ i.fa-exclamation-triangle {
 ._txtAnnonce .top h2 {
   margin-right: auto;
 
-  font-size: 27px;
+  font-size: 24px;
   font-weight: 500;
 }
 
@@ -1563,7 +1562,7 @@ i.fa-exclamation-triangle {
   margin-bottom: 45px;
 }
 
-._catAnnonce{
+._catAnnonce {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1584,30 +1583,47 @@ i.fa-exclamation-triangle {
   color: white;
 }
 
-._txtAnnonce .bottom{
+._txtAnnonce .bottom {
   margin-bottom: 20px;
 }
 
-._txtAnnonce ._copyright{
+._txtAnnonce ._copyright {
   font-style: italic;
   font-weight: 300;
 }
 
-._txtAnnonce ._copyright span{
+._txtAnnonce ._copyright span {
   font-weight: 400;
   font-style: normal;
 }
 
-/* .active {
-  color: #f50;
-}
-.notActive {
-  color: #575757;
+
+
+
+
+
+
+
+
+
+
+
+/* bazar */
+
+.flm2 {
+  display: block;
+
+  width: 150px;
+  height: 150px;
+
+  margin-left: 18px;
+  margin-bottom: 50px;
 }
 
-.hr_active {
-  background-color: #f50;
+.modif{
+  height: 1530px;
 }
-.hr_notActive {
-  color: #f500;
-}  */
+
+.modif2{
+  margin-top: 25px;
+}

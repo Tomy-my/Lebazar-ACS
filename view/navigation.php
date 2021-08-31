@@ -16,10 +16,10 @@
     </form>
 
     <div id="categorie" >
-        <a href="./index.php">
+        <a href="./annonces.php">
             <i class="far fa-list-alt"></i>
             <br>
-            Catégories
+            Annonces
         </a>
     </div>
 

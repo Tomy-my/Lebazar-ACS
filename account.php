@@ -98,10 +98,10 @@ else
                     </a>
                     <div class="textContent_My">
                         <h3><?php echo $row['titre']; ?></h3>
-                        <p><?php echo $row['description']; ?></p>
+                        <p class="flm"><?php echo $row['description']; ?></p>
                     </div>
                     <div class="btn-container-show">
-                        <button class="btn btn-showAnnonce" type="submit" name="profil">Modifier</button>
+                        <a href="modification.php?id=<?= $row['id']?>"><button class="btn btn-showAnnonce" type="submit" name="profil">Modifier</button></a>
                     </div>
                 </div>
                 <?php
@@ -146,7 +146,6 @@ else
             </div>
         </div>
     </div>
-
     <script type="text/javascript" src="./public/js/menu.js"></script>
 <?php    
     include('view/footer.php');

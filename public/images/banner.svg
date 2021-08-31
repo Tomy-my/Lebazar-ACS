@@ -375,7 +375,7 @@
         <path class="cls-4"
             d="M92.31,134a13.62,13.62,0,0,0,9,8.86,16.26,16.26,0,0,0,10.33-.87c4.68-1.86,8.81-5.45,10.56-10.16a19.42,19.42,0,0,0,.65-10c-.77-4.39-2.91-8.88-6.89-10.88-4.63-2.33-10.24-.64-14.92,1.6C93.1,116.34,89.51,125.32,92.31,134Z"
             transform="translate(-32.17 -61.51)"
-            style="Animation-name: SVGanime;Animation-duration: 40s;Animation-iteration-count: infinite;" />
+            style="Animation-name: SVGanime;Animation-duration: 20s;Animation-iteration-count: infinite;" />
         <path class="cls-5"
             d="M207.39,136.58a10.07,10.07,0,0,0-3-13.64c-6.84-4.17-18.14,2.72-15.41,11C191.54,141.58,202.94,143.3,207.39,136.58Z"
             transform="translate(-32.17 -61.51)" />
