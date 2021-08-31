@@ -140,7 +140,7 @@ if(isset($_REQUEST['btn_insert_add_annonce']))
 			if($insert_stmt->execute())
 			{
 				header("refresh:0;./index.php"); 
-			}
+			} 
 		}
 	}
 	catch(PDOException $e)

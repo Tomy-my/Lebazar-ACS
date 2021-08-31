@@ -17,7 +17,7 @@
 
     <div id="categorie" >
         <a href="./annonces.php">
-            <i class="far fa-list-alt"></i>
+            <i class="far fa-list-alt"></i> 
             <br>
             Annonces
         </a>

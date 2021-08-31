@@ -99,7 +99,7 @@ else
                     <div class="textContent_My">
                         <h3><?php echo $row['titre']; ?></h3>
                         <p class="flm"><?php echo $row['description']; ?></p>
-                    </div>
+                    </div> 
                     <div class="btn-container-show">
                         <a href="modification.php?id=<?= $row['id']?>"><button class="btn btn-showAnnonce" type="submit" name="profil">Modifier</button></a>
                     </div>

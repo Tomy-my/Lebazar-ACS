@@ -11,7 +11,7 @@ include("controller/register.php");
         <h2>Créer un nouveau compte</h2>
         <p id="accroche">Inscrivez vous afin d'avoir accès à toutes nos fonctionnalités.</p>
         <form action="" method="post">
-            <div class="container_prenom">
+            <div class="container_prenom"> 
                 <div class="ico_"><i class="fas fa-user"></i></div>
                 <div class="input_mail"> 
                     <input onclick="EffectMail()" type="text" name="prenom" id="inputPrenom" placeholder="Prénom" class="form-control" required pattern="^[A-Za-z '-]+$" maxlength="20">

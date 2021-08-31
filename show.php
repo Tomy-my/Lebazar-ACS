@@ -52,7 +52,7 @@ include('view/header.php');
                         </div>
                     </div>
                 </div>
-        </div>
+        </div> 
 
 <?php    
 include('view/footer.php');    

@@ -12,4 +12,4 @@ try{
 
 }catch(PDOException $e){
     die(print_r("erreur bdd:" .$e->getMessage()));
-}
+} 

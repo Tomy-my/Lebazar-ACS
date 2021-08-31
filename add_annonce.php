@@ -39,7 +39,7 @@ else
                         <option value="Voiture">Voitures</option>
                         <option value="Moto">Motos</option>
                         <option value="Nautique">Nautiques</option>
-                        <option value="Maison">Maisons</option>
+                        <option value="Maison">Maisons</option> 
                         <option value="Autre">Autres</option>
                     </select>
                 </div>

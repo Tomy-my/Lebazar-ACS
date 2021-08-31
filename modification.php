@@ -29,7 +29,7 @@ include('view/header.php');
                     <input  type="text" name="titre" id="inputTitre" value="<?php echo $titre;?>" required pattern="^[A-Za-z '-]+$" maxlength="20">
                 </div>
                 <div class="container_categorie">
-                    <div class="ico_">
+                    <div class="ico_"> 
                         <i class="far fa-list-alt"></i>
                     </div>
                     <select  name="categorie" id="inputCategorie">

@@ -84,8 +84,7 @@ require_once("model/config_bdd.php");
             <?php
             }
             ?>
-        </div>
-
+        </div> 
 
         <div class="ct_annonceCar">
             <?php
