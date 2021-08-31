@@ -36,7 +36,7 @@ else
                     </div>
                     <select  name="categorie" id="inputCategorie">
                         <option selected disabled>Catégorie :</option>
-                        <option value="Voitures">Voitures</option>
+                        <option value="Voiture">Voitures</option>
                         <option value="Moto">Motos</option>
                         <option value="Nautique">Nautiques</option>
                         <option value="Maison">Maisons</option>

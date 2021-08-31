@@ -1170,6 +1170,10 @@ i.fa-exclamation-triangle {
   padding-right: 15px;
 }
 
+.btn-container-show a{
+  margin-right: auto;
+}
+
 .btn-showAnnonce {
   width: 140px;
   height: 40px;
