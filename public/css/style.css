@@ -1631,3 +1631,28 @@ i.fa-exclamation-triangle {
 .modif2{
   margin-top: 25px;
 }
+
+.flm3{
+  height: auto;
+}
+
+.flm4 {
+  display: flex;
+  flex-direction: column;
+
+  width: 400px;
+  height: 45vw;
+
+  margin-right: 255px;
+}
+
+.flm5{
+  width: 240%;
+  height: 100%;
+
+  margin-bottom: 30px;
+}
+
+.flm6 {
+  margin-top: 300px;
+}

@@ -29,10 +29,14 @@ include('view/header.php');
 ?>
     <div class="page_annonce">
         <div class="annonce">
-            <div class="annonceAll">
+            <div class="annonceAll flm3">
                 <div class="_annonce">
-                    <div class="_imgAnnonce" style="background-image: url('public/upload/<?php echo $row['image_file']; ?>');"> </div>
-                    <div class="_txtAnnonce">
+                    <div class="flm4">
+                        <div class="_imgAnnonce flm5" style="background-image: url('public/upload/<?php echo $row['image_file']; ?>');"> </div>
+                        <div class="_imgAnnonce flm5" style="background-image: url('public/upload/<?php echo $row['image_file2']; ?>');"> </div>
+                        <div class="_imgAnnonce flm5" style="background-image: url('public/upload/<?php echo $row['image_file3']; ?>');"> </div>
+                    </div>
+                    <div class="_txtAnnonce flm6">
                         <div class="top">
                             <h2><?php echo $row['titre']; ?></h2>
                             <h3><?php echo $row['prix']; ?> €</h3>
